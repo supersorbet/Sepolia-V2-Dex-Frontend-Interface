@@ -27,7 +27,7 @@ export enum Rounding {
 export const FACTORY_ADDRESS = '0xcA143Ce32Fe78f1f7019d7d551a6402fC5350c73'
 
 // // TODO: ETH This is test version, do not depends on it
-const FACTORY_ADDRESS_ETH = '0xD93801d7D3a368D94A3A32E97A20f7aC1948a5dB'
+const FACTORY_ADDRESS_ETH = '0x460b2005b3318982feADA99f7ebF13e1D6f6eFfE'
 export const FACTORY_ADDRESS_GOERLI_ARBI = '0xeB660A58B4C668bD8d0b92c28f79353b5bC77C25'
 
 export const FACTORY_ADDRESS_MAP: Record<number, string> = {
@@ -40,7 +40,7 @@ export const FACTORY_ADDRESS_MAP: Record<number, string> = {
 }
 export const INIT_CODE_HASH = '0x00fb7f630766e6a796048ea87d01acd3068e8ff67d078148a3fa3f4a84f69bd5'
 
-const INIT_CODE_HASH_ETH = '0x57224589c67f3f30a6b0d7a1b54cf3153ab84563bc609ef41dfb34f8b2974d2d'
+const INIT_CODE_HASH_ETH = '0xf448644b76f68ecb46499ab41317c68a9874f8cfb201a2975bfd36be75e69a79'
 export const INIT_CODE_HASH_MAP: Record<number, string> = {
   [ChainId.ETHEREUM]: INIT_CODE_HASH_ETH,
   [ChainId.RINKEBY]: INIT_CODE_HASH_ETH,
