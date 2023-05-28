@@ -12,6 +12,8 @@ export const masterChefAddresses = {
   97: '0xB4A466911556e39210a6bB2FaECBB59E4eB7E43d',
   56: '0xa5f8C5Dbd5F286960b9d90548680aE5ebFf07652',
   421613: '0xba53A1aF0aeB5247A2eeF4098cC85b4B1C853E28',
+  1: '',
+  5: '0x5a9934C2942795897392A5054EdFc6fAa1c657BA',
 }
 
 export const nonBSCVaultAddresses = {

@@ -160,7 +160,14 @@ export const SWAPP_GOERLI_ARBI = new Token(
   'SWAPP',
   '',
 )
-
+export const CAKE_ETH = new Token(
+  ChainId.ETHEREUM,
+  '0x480C1DCcFF89b1b6E663c4b22B06e1d610e885a1',
+  18,
+  'COPE',
+  'Copium',
+  'https://pepepal.com/',
+)
 export const BUSD: Record<ChainId, Token> = {
   [ChainId.ETHEREUM]: BUSD_ETH,
   [ChainId.RINKEBY]: BUSD_RINKEBY,
@@ -174,6 +181,7 @@ export const CAKE = {
   [ChainId.BSC]: CAKE_MAINNET,
   [ChainId.BSC_TESTNET]: CAKE_TESTNET,
   [ChainId.GOERLI_ARBI]: SWAPP_GOERLI_ARBI,
+  [ChainId.ETHEREUM]: CAKE_ETH,
 }
 
 export const USDC = {
