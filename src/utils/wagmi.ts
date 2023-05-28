@@ -1,5 +1,5 @@
 import { BinanceWalletConnector } from '@pancakeswap/wagmi/connectors/binanceWallet'
-import { bsc, bscTest, goerli, rinkeby, arbitrumGoerli } from '@pancakeswap/wagmi/chains'
+import { bsc, bscTest, goerli, arbitrumGoerli } from '@pancakeswap/wagmi/chains'
 import { configureChains, createClient } from 'wagmi'
 import memoize from 'lodash/memoize'
 import { CoinbaseWalletConnector } from 'wagmi/connectors/coinbaseWallet'
@@ -15,7 +15,7 @@ const CHAINS = [
   // TODO: ETH
   // mainnet,
   bscTest,
-  rinkeby,
+//  rinkeby,
   goerli,
   arbitrumGoerli,
   ethmainnet,
