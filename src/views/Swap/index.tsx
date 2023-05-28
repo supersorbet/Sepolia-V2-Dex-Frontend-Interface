@@ -19,10 +19,10 @@ import StableSwapFormContainer from './StableSwap'
 import { StyledInputCurrencyWrapper, StyledSwapContainer } from './styles'
 import SwapTab, { SwapType } from './components/SwapTab'
 
-const CHART_SUPPORT_CHAIN_IDS = [ChainId.BSC]
+const CHART_SUPPORT_CHAIN_IDS = [ChainId.BSC, ChainId.ETHEREUM, ChainId.GOERLI_ARBI, ChainId.GOERLI]
 export const ACCESS_TOKEN_SUPPORT_CHAIN_IDS = [ChainId.BSC]
 
-const STABLE_SUPPORT_CHAIN_IDS = [ChainId.GOERLI_ARBI, ChainId.BSC_TESTNET]
+const STABLE_SUPPORT_CHAIN_IDS = [ChainId.ETHEREUM, ChainId.GOERLI_ARBI, ChainId.BSC_TESTNET]
 
 export default function Swap() {
   const { isMobile } = useMatchBreakpoints()

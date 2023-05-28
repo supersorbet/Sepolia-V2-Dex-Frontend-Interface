@@ -8,6 +8,7 @@ import { MetaMaskConnector } from 'wagmi/connectors/metaMask'
 import { WalletConnectConnector } from 'wagmi/connectors/walletConnect'
 import { jsonRpcProvider } from 'wagmi/providers/jsonRpc'
 import { SafeConnector } from '@gnosis.pm/safe-apps-wagmi'
+import { ethmainnet } from '../../packages/wagmi/chains/chains'
 
 const CHAINS = [
   bsc,
@@ -17,6 +18,7 @@ const CHAINS = [
   rinkeby,
   goerli,
   arbitrumGoerli,
+  ethmainnet,
 ]
 
 const getNodeRealUrl = (networkName: string) => {
@@ -76,7 +78,7 @@ export const coinbaseConnector = new CoinbaseWalletConnector({
   chains,
   options: {
     appName: 'PancakeSwap',
-    appLogoUrl: 'https://pancakeswap.com/logo.png',
+    appLogoUrl: '',
   },
 })
 

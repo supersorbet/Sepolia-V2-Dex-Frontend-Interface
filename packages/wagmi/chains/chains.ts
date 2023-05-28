@@ -138,4 +138,26 @@ export const arbitrumGoerli: Chain = {
   testnet: true,
 }
 
+export const ethmainnet: Chain = {
+  id: 1,
+  name: 'Ethereum',
+  network: 'eth',
+  nativeCurrency: {
+    decimals: 18,
+    name: 'Ether',
+    symbol: 'ETH',
+  },
+  rpcUrls: {
+    public: 'https://mainnet.infura.io/v3/',
+    default: 'https://mainnet.infura.io/v3/',
+  },
+  blockExplorers: {
+    default: { name: 'Etherscan', url: 'https://etherscan.io' },
+  },
+  multicall: {
+    address: '0xcA11bde05977b3631167028862bE2a173976CA11',
+    blockCreated: 6507670,
+  },
+//  testnet: true,
+}
 export { rinkeby, mainnet, goerli }

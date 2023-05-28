@@ -128,7 +128,7 @@ const config: (
       ],
     },
     {
-      label: t('NFT'),
+      label: t('NFT Amm'),
       href: `${nftsBaseUrl}`,
       icon: NftIcon,
       fillIcon: NftFillIcon,
