@@ -2,19 +2,14 @@
   {
     "inputs": [
       {
-        "internalType": "contract IMasterChef",
-        "name": "_MASTER_CHEF",
+        "internalType": "contract CopeToken",
+        "name": "_cake",
         "type": "address"
       },
       {
-        "internalType": "contract IBEP20",
-        "name": "_CAKE",
+        "internalType": "address",
+        "name": "_devaddr",
         "type": "address"
-      },
-      {
-        "internalType": "uint256",
-        "name": "_MASTER_PID",
-        "type": "uint256"
       },
       {
         "internalType": "address",
@@ -42,7 +37,7 @@
       },
       {
         "indexed": true,
-        "internalType": "contract IBEP20",
+        "internalType": "contract IERC20",
         "name": "lpToken",
         "type": "address"
       },
@@ -108,12 +103,6 @@
   },
   {
     "anonymous": false,
-    "inputs": [],
-    "name": "Init",
-    "type": "event"
-  },
-  {
-    "anonymous": false,
     "inputs": [
       {
         "indexed": true,
@@ -129,6 +118,25 @@
       }
     ],
     "name": "OwnershipTransferred",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "user",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "devaddr",
+        "type": "address"
+      }
+    ],
+    "name": "SetDev",
     "type": "event"
   },
   {
@@ -341,19 +349,6 @@
   },
   {
     "inputs": [],
-    "name": "CAKE",
-    "outputs": [
-      {
-        "internalType": "contract IBEP20",
-        "name": "",
-        "type": "address"
-      }
-    ],
-    "stateMutability": "view",
-    "type": "function"
-  },
-  {
-    "inputs": [],
     "name": "CAKE_RATE_TOTAL_PRECISION",
     "outputs": [
       {
@@ -368,32 +363,6 @@
   {
     "inputs": [],
     "name": "MASTERCHEF_CAKE_PER_BLOCK",
-    "outputs": [
-      {
-        "internalType": "uint256",
-        "name": "",
-        "type": "uint256"
-      }
-    ],
-    "stateMutability": "view",
-    "type": "function"
-  },
-  {
-    "inputs": [],
-    "name": "MASTER_CHEF",
-    "outputs": [
-      {
-        "internalType": "contract IMasterChef",
-        "name": "",
-        "type": "address"
-      }
-    ],
-    "stateMutability": "view",
-    "type": "function"
-  },
-  {
-    "inputs": [],
-    "name": "MASTER_PID",
     "outputs": [
       {
         "internalType": "uint256",
@@ -425,7 +394,7 @@
         "type": "uint256"
       },
       {
-        "internalType": "contract IBEP20",
+        "internalType": "contract IERC20",
         "name": "_lpToken",
         "type": "address"
       },
@@ -433,6 +402,11 @@
         "internalType": "bool",
         "name": "_isRegular",
         "type": "bool"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_startBlockNumber",
+        "type": "uint256"
       },
       {
         "internalType": "bool",
@@ -482,6 +456,19 @@
     "name": "burnCake",
     "outputs": [],
     "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "cake",
+    "outputs": [
+      {
+        "internalType": "contract CopeToken",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
     "type": "function"
   },
   {
@@ -576,6 +563,32 @@
   {
     "inputs": [
       {
+        "internalType": "address",
+        "name": "_devaddr",
+        "type": "address"
+      }
+    ],
+    "name": "dev",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "devaddr",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
         "internalType": "uint256",
         "name": "_pid",
         "type": "uint256"
@@ -612,26 +625,6 @@
   },
   {
     "inputs": [],
-    "name": "harvestFromMasterChef",
-    "outputs": [],
-    "stateMutability": "nonpayable",
-    "type": "function"
-  },
-  {
-    "inputs": [
-      {
-        "internalType": "contract IBEP20",
-        "name": "dummyToken",
-        "type": "address"
-      }
-    ],
-    "name": "init",
-    "outputs": [],
-    "stateMutability": "nonpayable",
-    "type": "function"
-  },
-  {
-    "inputs": [],
     "name": "lastBurnedBlock",
     "outputs": [
       {
@@ -654,7 +647,7 @@
     "name": "lpToken",
     "outputs": [
       {
-        "internalType": "contract IBEP20",
+        "internalType": "contract IERC20",
         "name": "",
         "type": "address"
       }
@@ -786,6 +779,19 @@
     "name": "set",
     "outputs": [],
     "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "startBlock",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
     "type": "function"
   },
   {
@@ -942,11 +948,24 @@
             "type": "bool"
           }
         ],
-        "internalType": "struct MasterChefV2.PoolInfo",
+        "internalType": "struct MasterChefV3000.PoolInfo",
         "name": "pool",
         "type": "tuple"
       }
     ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_startBlock",
+        "type": "uint256"
+      }
+    ],
+    "name": "updateStartBlock",
+    "outputs": [],
     "stateMutability": "nonpayable",
     "type": "function"
   },
