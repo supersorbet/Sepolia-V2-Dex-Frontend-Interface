@@ -19,8 +19,8 @@ import StableSwapFormContainer from './StableSwap'
 import { StyledInputCurrencyWrapper, StyledSwapContainer } from './styles'
 import SwapTab, { SwapType } from './components/SwapTab'
 
-const CHART_SUPPORT_CHAIN_IDS = [ChainId.BSC]
-export const ACCESS_TOKEN_SUPPORT_CHAIN_IDS = [ChainId.BSC]
+const CHART_SUPPORT_CHAIN_IDS = [ChainId.BSC, ChainId.GOERLI_ARBI]
+export const ACCESS_TOKEN_SUPPORT_CHAIN_IDS = [ChainId.BSC, ChainId.GOERLI_ARBI]
 
 const STABLE_SUPPORT_CHAIN_IDS = [ChainId.GOERLI_ARBI, ChainId.BSC_TESTNET]
 
