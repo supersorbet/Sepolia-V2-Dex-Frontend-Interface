@@ -12,7 +12,7 @@ export const getProvider = ({ chainId }: { chainId?: number }) => {
       return bscTestnetProvider
     case 5:
       return goerliProvider
-    case 421613:
+    case 1:                // case 421613:
       return goerliArbiProvider
     default:
       return null

@@ -5,12 +5,12 @@ import { Token } from './entities/token'
 export type BigintIsh = JSBI | number | string
 
 export enum ChainId {
-  ETHEREUM = 1,
+  ETHEREUM = 421613,
   RINKEBY = 4,
   GOERLI = 5,
   BSC = 56,
   BSC_TESTNET = 97,
-  GOERLI_ARBI = 421613,
+  GOERLI_ARBI = 1,
 }
 
 export enum TradeType {
@@ -27,8 +27,8 @@ export enum Rounding {
 export const FACTORY_ADDRESS = '0xcA143Ce32Fe78f1f7019d7d551a6402fC5350c73'
 
 // // TODO: ETH This is test version, do not depends on it
-const FACTORY_ADDRESS_ETH = '0xD93801d7D3a368D94A3A32E97A20f7aC1948a5dB'
-export const FACTORY_ADDRESS_GOERLI_ARBI = '0xeB660A58B4C668bD8d0b92c28f79353b5bC77C25'
+const FACTORY_ADDRESS_ETH = '0xeB660A58B4C668bD8d0b92c28f79353b5bC77C25'
+export const FACTORY_ADDRESS_GOERLI_ARBI = '0x460b2005b3318982feADA99f7ebF13e1D6f6eFfE'
 
 export const FACTORY_ADDRESS_MAP: Record<number, string> = {
   [ChainId.ETHEREUM]: FACTORY_ADDRESS_ETH,
@@ -47,7 +47,7 @@ export const INIT_CODE_HASH_MAP: Record<number, string> = {
   [ChainId.GOERLI]: INIT_CODE_HASH_ETH,
   [ChainId.BSC]: INIT_CODE_HASH,
   [ChainId.BSC_TESTNET]: '0xd0d4c4cd0848c93cb4fd1f498d7013ee6bfb25783ea21593d5834f5d250ece66',
-  [ChainId.GOERLI_ARBI]: '0x37b3685b75f1b4fe595cced642748ef9c6d2f089023d502003e1fd8bb9077292',
+  [ChainId.GOERLI_ARBI]: '0xf448644b76f68ecb46499ab41317c68a9874f8cfb201a2975bfd36be75e69a79',
 }
 
 export const MINIMUM_LIQUIDITY = JSBI.BigInt(1000)
@@ -76,8 +76,8 @@ export const SOLIDITY_TYPE_MAXIMA = {
 }
 
 export const WETH9 = {
-  [ChainId.ETHEREUM]: new Token(
-    ChainId.ETHEREUM,
+  [ChainId.GOERLI_ARBI]: new Token(
+    ChainId.GOERLI_ARBI,
     '0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2',
     18,
     'WETH',
@@ -100,8 +100,8 @@ export const WETH9 = {
     'Wrapped Ether',
     'https://weth.io'
   ),
-  [ChainId.GOERLI_ARBI]: new Token(
-    ChainId.GOERLI_ARBI,
+  [ChainId.ETHEREUM]: new Token(
+    ChainId.ETHEREUM,
     '0xD495CE3454eF4C4AF0b52190B02cf0Af209A5656',
     18,
     'WETH',
@@ -138,12 +138,12 @@ export const WBNB = {
 }
 
 export const WNATIVE: Record<number, Token> = {
-  [ChainId.ETHEREUM]: WETH9[ChainId.ETHEREUM],
+  [ChainId.GOERLI_ARBI]: WETH9[ChainId.GOERLI_ARBI],
   [ChainId.RINKEBY]: WETH9[ChainId.RINKEBY],
   [ChainId.GOERLI]: WETH9[ChainId.GOERLI],
   [ChainId.BSC]: WBNB[ChainId.BSC],
   [ChainId.BSC_TESTNET]: WBNB[ChainId.BSC_TESTNET],
-  [ChainId.GOERLI_ARBI]: WETH9[ChainId.GOERLI_ARBI],
+  [ChainId.ETHEREUM]: WETH9[ChainId.ETHEREUM],
 }
 
 export const NATIVE: Record<
