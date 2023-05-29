@@ -153,11 +153,19 @@ export const BUSD_GOERLI_ARBI = new Token(
 )
 
 export const SWAPP_GOERLI_ARBI = new Token(
-  ChainId.GOERLI_ARBI,
+  ChainId.ETHEREUM,
   '0x5cC486465A229308b1BD0b0F867B88a45B0c64DD',
   18,
   'SWAPP',
   'SWAPP',
+  '',
+)
+export const SWAPP_ETH = new Token(
+  ChainId.GOERLI_ARBI,
+  '0x480C1DCcFF89b1b6E663c4b22B06e1d610e885a1',
+  18,
+  'COPE',
+  'COPE',
   '',
 )
 
