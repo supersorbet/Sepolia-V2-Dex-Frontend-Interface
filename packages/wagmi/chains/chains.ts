@@ -115,7 +115,7 @@ export const bscTest: Chain = {
   testnet: true,
 }
 
-export const arbitrumGoerli: Chain = {
+export const ethmainnet: Chain = {
   id: 421613,
   name: 'Arbitrum Goerli Testnet',
   network: 'arbitrumGoerli-testnet',
@@ -138,7 +138,7 @@ export const arbitrumGoerli: Chain = {
   testnet: true,
 }
 
-export const ethmainnet: Chain = {
+export const arbitrumGoerli: Chain = {
   id: 1,
   name: 'Ethereum',
   network: 'eth',
