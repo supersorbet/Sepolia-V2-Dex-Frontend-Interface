@@ -4,12 +4,12 @@ import { bscTokens, bscTestnetTokens, USDC, USDT, BUSD, CAKE } from '@pancakeswa
 import { ChainMap, ChainTokenList } from './types'
 
 export const ROUTER_ADDRESS: ChainMap<string> = {
-  [ChainId.ETHEREUM]: '0x3BC722f252C7bAE2f55647e49aDcB9d33Ff6eBcC',
+  [ChainId.ETHEREUM]: '0x4a2b009aAa0b699ae48560BA8ff0ae7B9773f4C3',
   [ChainId.RINKEBY]: '0x3BC722f252C7bAE2f55647e49aDcB9d33Ff6eBcC',
   [ChainId.GOERLI]: '0x3BC722f252C7bAE2f55647e49aDcB9d33Ff6eBcC',
   [ChainId.BSC]: '0x10ED43C718714eb63d5aA57B78B54704E256024E',
   [ChainId.BSC_TESTNET]: '0xD99D1c33F9fC3444f8101754aBC46c52416550D1',
-  [ChainId.GOERLI_ARBI]: '0x4a2b009aAa0b699ae48560BA8ff0ae7B9773f4C3',
+  [ChainId.GOERLI_ARBI]: '0x724F7c8a9Cb973Ee7C0689a643D29908bC3865b5',
 }
 
 // used to construct intermediary pairs for trading

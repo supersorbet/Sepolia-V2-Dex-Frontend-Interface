@@ -181,7 +181,8 @@ export const BUSD: Record<ChainId, Token> = {
 export const CAKE = {
   [ChainId.BSC]: CAKE_MAINNET,
   [ChainId.BSC_TESTNET]: CAKE_TESTNET,
-  [ChainId.GOERLI_ARBI]: SWAPP_GOERLI_ARBI,
+  [ChainId.GOERLI_ARBI]: SWAPP_ETH,
+  [ChainId.ETHEREUM]: SWAPP_GOERLI_ARBI,
 }
 
 export const USDC = {
