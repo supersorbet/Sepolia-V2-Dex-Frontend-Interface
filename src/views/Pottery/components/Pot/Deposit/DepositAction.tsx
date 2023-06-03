@@ -134,7 +134,7 @@ const DepositAction: React.FC<React.PropsWithChildren<DepositActionProps>> = ({ 
                 </Button>
               )}
               <LogoRoundIcon m="0 4px" width="24px" height="24px" />
-              <Text><COPE></COPE></Text>
+              <Text>COPE</Text>
             </Flex>
           </Flex>
         </Container>
