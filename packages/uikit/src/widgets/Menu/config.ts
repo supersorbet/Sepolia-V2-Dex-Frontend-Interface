@@ -100,22 +100,22 @@ export const links: MenuItemsType[] = [
         label: "Info & Analytics",
         href: "/",
       },
-      {
-        label: "IFO Token Sales",
-        href: "/",
-        status: status.SOON,
-      },
+    //  {
+    //    label: "IFO Token Sales",
+    //    href: "/",
+    //    status: status.SOON,
+    //  },
       {
         type: DropdownMenuItemType.DIVIDER,
       },
       {
-        label: "NFT Collectibles",
+        label: "NFT AMM",
         href: "/",
       },
-      {
-        label: "Team Leaderboard",
-        href: "/",
-      },
+    //  {
+    //    label: "Team Leaderboard",
+    //    href: "/",
+    //  },
       {
         type: DropdownMenuItemType.DIVIDER,
       },
