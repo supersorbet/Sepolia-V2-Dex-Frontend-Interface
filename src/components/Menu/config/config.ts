@@ -54,28 +54,28 @@ const config: (
           label: t('Swap'),
           href: '/swap',
         },
-        {
-          label: t('Limit'),
-          href: '/limit-orders',
-          supportChainIds: SUPPORT_ONLY_BSC,
-          image: '/images/decorations/3d-coin.png',
-        },
+    //    {
+    //      label: t('Limit'),
+    //      href: '/limit-orders',
+    //      supportChainIds: SUPPORT_ONLY_BSC,
+    //      image: '/images/decorations/3d-coin.png',
+    //    },
         {
           label: t('Liquidity'),
           href: '/liquidity',
         },
-        {
-          label: t('Perpetual'),
-          href: `https://perp.pancakeswap.finance/${perpLangMap(languageCode)}/futures/BTCUSDT?theme=${perpTheme(
-            isDark,
-          )}`,
-          type: DropdownMenuItemType.EXTERNAL_LINK,
-        },
-        {
-          label: t('Bridge'),
-          href: 'https://bridge.pancakeswap.finance/',
-          type: DropdownMenuItemType.EXTERNAL_LINK,
-        },
+    //    {
+    //      label: t('Perpetual'),
+    //      href: `https://perp.pancakeswap.finance/${perpLangMap(languageCode)}/futures/BTCUSDT?theme=${perpTheme(
+    //        isDark,
+    //      )}`,
+    //      type: DropdownMenuItemType.EXTERNAL_LINK,
+    //    },
+    //    {
+    //      label: t('Bridge'),
+    //      href: 'https://bridge.pancakeswap.finance/',
+    //      type: DropdownMenuItemType.EXTERNAL_LINK,
+    //    },
       ].map((item) => addMenuItemSupported(item, chainId)),
     },
     {
@@ -96,8 +96,8 @@ const config: (
           supportChainIds: SUPPORT_ONLY_BSC,
         },
       ].map((item) => addMenuItemSupported(item, chainId)),
-    },
-    {
+  //  },
+  /*  {
       label: t('Win'),
       href: '/prediction',
       icon: TrophyIcon,
@@ -124,11 +124,11 @@ const config: (
           label: t('Pottery (BETA)'),
           href: '/pottery',
           image: '/images/decorations/lottery.png',
-        },
-      ],
-    },
+        */  },
+    //  ],
+  //  },
     {
-      label: t('NFT'),
+      label: t('NFT AMM'),
       href: `${nftsBaseUrl}`,
       icon: NftIcon,
       fillIcon: NftFillIcon,
@@ -175,20 +175,20 @@ const config: (
         {
           type: DropdownMenuItemType.DIVIDER,
         },
-        {
-          label: t('Leaderboard'),
-          href: '/teams',
-          supportChainIds: SUPPORT_ONLY_BSC,
-          image: '/images/decorations/leaderboard.png',
-        },
+      //  {
+      //    label: t('Leaderboard'),
+      //    href: '/teams',
+      //    supportChainIds: SUPPORT_ONLY_BSC,
+      //    image: '/images/decorations/leaderboard.png',
+      //  },
         {
           type: DropdownMenuItemType.DIVIDER,
         },
-        {
-          label: t('Blog'),
-          href: 'https://medium.com/pancakeswap',
-          type: DropdownMenuItemType.EXTERNAL_LINK,
-        },
+    //    {
+    //      label: t('Blog'),
+    //      href: 'https://medium.com/pancakeswap',
+    //      type: DropdownMenuItemType.EXTERNAL_LINK,
+    //    },
         {
           label: t('Docs'),
           href: 'https://docs.pancakeswap.finance',
