@@ -2,13 +2,13 @@ import React from "react";
 import Button from "../../components/Button/Button";
 import Flex from "../../components/Box/Flex";
 import useWalletModal from "./useWalletModal";
-import { BinanceChainIcon, CoinbaseWalletIcon, MetamaskIcon } from "../../components/Svg";
+import { /* BinanceChainIcon, */ CoinbaseWalletIcon, MetamaskIcon } from "../../components/Svg";
 
 enum ConnectorNames {
   MetaMask = "metaMask",
   Injected = "injected",
   WalletConnect = "walletConnect",
-  BSC = "bsc",
+//  BSC = "bsc",
   Blocto = "blocto",
   WalletLink = "coinbaseWallet",
 }
@@ -31,17 +31,17 @@ export const Wallet: React.FC<React.PropsWithChildren> = () => {
         priority: 1,
         href: "https://metamask.app.link/dapp/pancakeswap.finance/",
       },
-      {
-        title: "Binance Wallet",
-        icon: BinanceChainIcon,
-        connectorId: ConnectorNames.BSC,
-        priority: 2,
-      },
+    //  {
+    //    title: "Binance Wallet",
+    //    icon: BinanceChainIcon,
+    //    connectorId: ConnectorNames.BSC,
+    //    priority: 2,
+    //  },
       {
         title: "Coinbase Wallet",
         icon: CoinbaseWalletIcon,
         connectorId: ConnectorNames.WalletLink,
-        priority: 3,
+        priority: 2,
       },
     ]
   );

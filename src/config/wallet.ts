@@ -4,7 +4,7 @@ import {
   TrustWalletIcon,
   MathWalletIcon,
   TokenPocketIcon,
-  BinanceChainIcon,
+//  BinanceChainIcon,
   SafePalIcon,
   Coin98Icon,
   BraveIcon,
@@ -18,7 +18,7 @@ export enum ConnectorNames {
   MetaMask = 'metaMask',
   Injected = 'injected',
   WalletConnect = 'walletConnect',
-  BSC = 'bsc',
+//  BSC = 'bsc',
   Blocto = 'blocto',
   WalletLink = 'coinbaseWallet',
 }
@@ -32,18 +32,18 @@ export const wallets: WalletConfig<ConnectorNames>[] = [
     priority: 1,
     href: 'https://metamask.app.link/dapp/pancakeswap.finance/',
   },
-  {
-    title: 'Binance Wallet',
-    icon: BinanceChainIcon,
-    installed: typeof window !== 'undefined' && Boolean(window.BinanceChain),
-    connectorId: ConnectorNames.BSC,
-    priority: 2,
-  },
+//  {
+//    title: 'Binance Wallet',
+//    icon: BinanceChainIcon,
+//    installed: typeof window !== 'undefined' && Boolean(window.BinanceChain),
+//    connectorId: ConnectorNames.BSC,
+//    priority: 2,
+//  },
   {
     title: 'Coinbase Wallet',
     icon: CoinbaseWalletIcon,
     connectorId: ConnectorNames.WalletLink,
-    priority: 3,
+    priority: 2,
   },
   {
     title: 'Trust Wallet',
@@ -54,7 +54,7 @@ export const wallets: WalletConfig<ConnectorNames>[] = [
       (Boolean(window.ethereum?.isTrust) ||
         // @ts-ignore
         Boolean(window.ethereum?.isTrustWallet)),
-    priority: 4,
+    priority: 3,
     href: 'https://link.trustwallet.com/open_url?coin_id=20000714&url=https://pancakeswap.finance/',
     downloadLink: {
       desktop: 'https://chrome.google.com/webstore/detail/trust-wallet/egjidjbpglichdcondbcbdnbeeppgdph/related',
@@ -64,7 +64,7 @@ export const wallets: WalletConfig<ConnectorNames>[] = [
     title: 'WalletConnect',
     icon: WalletConnectIcon,
     connectorId: ConnectorNames.WalletConnect,
-    priority: 5,
+    priority: 4,
   },
   {
     title: 'Opera Wallet',
