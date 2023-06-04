@@ -4,7 +4,7 @@ import { USDC_GOERLI_ARBI, USDT_GOERLI_ARBI, CAKE_GOERLI_ARBI, BUSD_GOERLI_ARBI,
 export const goerliArbiTestnetTokens = {
   weth: WETH9[ChainId.GOERLI_ARBI],
   syrup: new Token(
-    ChainId.GOERLI_ARBI,
+    ChainId.ETHEREUM,
     '0x4E85579Ab75910b8CA409c7eDF2Ddfd88e994172',
     18,
     'StealingFromStrippersAtThaSyrupBar',

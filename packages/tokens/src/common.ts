@@ -1,5 +1,23 @@
 import { ChainId, Token } from '@pancakeswap/sdk'
 
+
+export const PEPL_ETH = new Token(
+  ChainId.ETHEREUM,
+  '0x7DbF199731A3CCC3445b99c130171646314fcB44',
+  9,
+  'PEPL',
+  'PepePal',
+  'https://pepepal.com/',
+)
+
+export const PEPL_GOERLI = new Token(
+  ChainId.GOERLI,
+  '0x535Fe3CCD4b860a865d10fAa60305EdABdf1Dd62',
+  9,
+  'PEPL',
+  'PepePal',
+)
+
 export const CAKE_MAINNET = new Token(
   ChainId.BSC,
   '0x0E09FaBB73Bd3Ade0a17ECC321fD13a19e81cE82',
@@ -152,6 +170,71 @@ export const BUSD_GOERLI_ARBI = new Token(
   'https://www.paxos.com/busd/',
 )
 
+export const WBTC_ETH = new Token(
+  ChainId.GOERLI_ARBI,
+  '0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599',
+  8,
+  'WBTC',
+  'Wrapped BTC',
+  
+)
+export const pepecoin = new Token(
+  ChainId.GOERLI_ARBI,
+  '0xA9E8aCf069C58aEc8825542845Fd754e41a9489A',
+  18,
+  'pepecoin',
+  'pepecoin',
+  'https://pepeco.in/',
+)
+export const WBAN = new Token(
+  ChainId.GOERLI_ARBI,
+  '0xe20B9e246db5a0d21BF9209E4858Bc9A3ff7A034',
+  18,
+  'WBAN',
+  'Wrapped Banano',
+  'https://banano.cc/',
+)
+export const BOBO = new Token(
+  ChainId.GOERLI_ARBI,
+  '0x5888641e3e6cBeA6D84Ba81EDb217bD691d3bE38',
+  9,
+  'BOBO',
+  'Bobo',
+  '',
+)
+export const PEPET = new Token(
+  ChainId.GOERLI_ARBI,
+  '0xe451D7c0d8a126175a9d10a3a9554D47C333Fb0F',
+  18,
+  'PEPET',
+  'Pepetuals',
+  '',
+)
+export const MIPEP = new Token(
+  ChainId.GOERLI_ARBI,
+  '0xFC0aF07FBD1bF89E076900fC8CFEf9BCD0E40aF3',
+  9,
+  'MIPEP',
+  'Pepe The Milady',
+  'https://pepemilady.com/',
+)
+export const BITCOIN = new Token(
+  ChainId.GOERLI_ARBI,
+  '0x72e4f9F808C49A2a61dE9C5896298920Dc4EEEa9',
+  8,
+  'BITCOIN',
+  'HarryPotterObamaSonic10Inu',
+  'https://hpos10i.shop/',
+)
+
+export const SEETHE = new Token(
+  ChainId.GOERLI_ARBI,
+  '0x196d485Fcc051F13e775ed8AB5ac42789747D462',
+  18,
+  'SEETHE',
+  'Seethe',
+  '',
+)
 export const SWAPP_GOERLI_ARBI = new Token(
   ChainId.ETHEREUM,
   '0x5cC486465A229308b1BD0b0F867B88a45B0c64DD',
@@ -198,4 +281,10 @@ export const USDT = {
   [ChainId.BSC]: USDT_BSC,
   [ChainId.ETHEREUM]: USDT_ETH,
   [ChainId.GOERLI_ARBI]: USDT_GOERLI_ARBI,
+}
+
+export const PEPL = {
+  [ChainId.GOERLI]: PEPL_GOERLI,
+  [ChainId.GOERLI_ARBI]: PEPL_ETH,
+  
 }

@@ -6,7 +6,7 @@ import type { FarmWithPrices } from './farmPrices'
 import { farmV2FetchFarms, FetchFarmsParams, fetchMasterChefV2Data } from './fetchFarms'
 
 const supportedChainId = [ChainId.GOERLI, ChainId.BSC, ChainId.GOERLI_ARBI, ChainId.ETHEREUM]
-export const bCakeSupportedChainId = [ChainId.BSC, ChainId.GOERLI_ARBI, ChainId.ETHEREUM]
+export const bCakeSupportedChainId = [ChainId.BSC]
 
 export function createFarmFetcher(multicallv2: MultiCallV2) {
   const fetchFarms = async (
@@ -42,7 +42,7 @@ export function createFarmFetcher(multicallv2: MultiCallV2) {
     fetchFarms,
     isChainSupported: (chainId: number) => supportedChainId.includes(chainId),
     supportedChainId,
-    isTestnet: (chainId: number) => ![ChainId.BSC].includes(chainId),
+    isTestnet: (chainId: number) => ![ChainId.GOERLI_ARBI].includes(chainId),
   }
 }
 

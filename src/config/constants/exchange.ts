@@ -1,6 +1,6 @@
 import { ChainId, JSBI, Percent, Token, WNATIVE, WBNB, WETH9 } from '@pancakeswap/sdk'
 import { BigNumber } from '@ethersproject/bignumber'
-import { bscTokens, bscTestnetTokens, USDC, USDT, BUSD, CAKE } from '@pancakeswap/tokens'
+import { bscTokens, bscTestnetTokens, USDC, USDT, BUSD, CAKE, PEPL_ETH, SEETHE, pepecoin } from '@pancakeswap/tokens'
 import { ChainMap, ChainTokenList } from './types'
 
 export const ROUTER_ADDRESS: ChainMap<string> = {
@@ -33,12 +33,16 @@ export const BASES_TO_CHECK_TRADES_AGAINST: ChainTokenList = {
     bscTokens.usdc,
   ],
   [ChainId.BSC_TESTNET]: [bscTestnetTokens.wbnb, bscTestnetTokens.cake, bscTestnetTokens.busd],
+  
   [ChainId.GOERLI_ARBI]: [
     USDC[ChainId.GOERLI_ARBI],
     USDT[ChainId.GOERLI_ARBI],
     BUSD[ChainId.GOERLI_ARBI],
     CAKE[ChainId.GOERLI_ARBI],
     WETH9[ChainId.GOERLI_ARBI],
+    PEPL_ETH[ChainId.GOERLI_ARBI],
+    SEETHE[ChainId.GOERLI_ARBI],
+    pepecoin[ChainId.GOERLI_ARBI],
   ],
 }
 
@@ -69,7 +73,7 @@ export const SUGGESTED_BASES: ChainTokenList = {
   [ChainId.GOERLI]: [USDC[ChainId.GOERLI], WNATIVE[ChainId.GOERLI], BUSD[ChainId.GOERLI]],
   [ChainId.BSC]: [bscTokens.busd, bscTokens.cake, bscTokens.btcb],
   [ChainId.BSC_TESTNET]: [bscTestnetTokens.wbnb, bscTestnetTokens.cake, bscTestnetTokens.busd],
-  [ChainId.GOERLI_ARBI]: [BUSD[ChainId.GOERLI_ARBI], USDT[ChainId.GOERLI_ARBI], USDC[ChainId.GOERLI_ARBI]],
+  [ChainId.GOERLI_ARBI]: [PEPL_ETH[ChainId.GOERLI_ARBI], WETH9[ChainId.GOERLI_ARBI], USDC[ChainId.GOERLI_ARBI], CAKE[ChainId.GOERLI_ARBI]],
 }
 
 // used to construct the list of all pairs we consider by default in the frontend
