@@ -89,7 +89,7 @@ const Home: React.FC<React.PropsWithChildren> = () => {
         index={2}
         hasCurvedDivider={false}
       >
-        {account && (chainId === ChainId.BSC || chainId === ChainId.GOERLI_ARBI) && (
+        {account && (chainId === ChainId.BSC || chainId === ChainId.GOERLI_ARBI || chainId === ChainId.GOERLI || chainId === ChainId.ETHEREUM) && (
           <UserBannerWrapper>
             <UserBanner />
           </UserBannerWrapper>
@@ -98,7 +98,7 @@ const Home: React.FC<React.PropsWithChildren> = () => {
         <Hero />
       </StyledHeroSection>
       <PageSection
-        innerProps={{ style: { margin: '0', width: '100%' } }}
+        innerProps={{ style: { margin: '0', width: '70%' } }}
         containerProps={{
           id: 'home-2',
         }}
@@ -130,7 +130,7 @@ const Home: React.FC<React.PropsWithChildren> = () => {
         hasCurvedDivider={false}
       >
         <OuterWedgeWrapper>
-          <InnerWedgeWrapper width="150%" top>
+          <InnerWedgeWrapper width="100%" top>
             <WedgeTopRight />
           </InnerWedgeWrapper>
         </OuterWedgeWrapper>
@@ -158,7 +158,7 @@ const Home: React.FC<React.PropsWithChildren> = () => {
       </PageSection>
       <PageSection
         innerProps={{ style: HomeSectionContainerStyles }}
-        background="linear-gradient(180deg, #7645D9 0%, #5121B1 100%)"
+        background="linear-gradient(180deg, #7645D9 0%, #5121B1 50%)"
         index={2}
         hasCurvedDivider={false}
       >

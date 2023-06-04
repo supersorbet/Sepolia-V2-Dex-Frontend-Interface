@@ -1,7 +1,7 @@
 import { BigNumber } from '@ethersproject/bignumber'
 import Trans from 'components/Trans'
 import { VaultKey } from 'state/types'
-import { bscTokens } from '@pancakeswap/tokens'
+import { bscTokens, goerliArbiTestnetTokens } from '@pancakeswap/tokens'
 import { SerializedPoolConfig, PoolCategory } from './types'
 
 export const MAX_LOCK_DURATION = 31536000
@@ -30,7 +30,7 @@ export const vaultPoolConfig = {
       primarySrc: `/images/tokens/${bscTokens.cake.address}.svg`,
       secondarySrc: '/images/tokens/autorenew.svg',
     },
-  },
+/*  },
   [VaultKey.CakeFlexibleSideVault]: {
     name: <Trans>Flexible CAKE</Trans>,
     description: <Trans>Flexible staking on the side.</Trans>,
@@ -38,10 +38,10 @@ export const vaultPoolConfig = {
     gasLimit: 500000,
     tokenImage: {
       primarySrc: `/images/tokens/${bscTokens.cake.address}.svg`,
-      secondarySrc: '/images/tokens/autorenew.svg',
-    },
-  },
-  [VaultKey.IfoPool]: {
+      secondarySrc: '/images/tokens/autorenew.svg',  
+//    },
+//  },
+/*  [VaultKey.IfoPool]: {
     name: 'IFO CAKE',
     description: <Trans>Stake CAKE to participate in IFOs</Trans>,
     autoCompoundFrequency: 1,
@@ -49,15 +49,15 @@ export const vaultPoolConfig = {
     tokenImage: {
       primarySrc: `/images/tokens/${bscTokens.cake.address}.svg`,
       secondarySrc: `/images/tokens/ifo-pool-icon.svg`,
-    },
+    }, */
   },
 } as const
 
 export const livePools: SerializedPoolConfig[] = [
   {
     sousId: 0,
-    stakingToken: bscTokens.cake,
-    earningToken: bscTokens.cake,
+    stakingToken: goerliArbiTestnetTokens.cake,
+    earningToken: goerliArbiTestnetTokens.pepl,
     contractAddress: {
       97: '0xB4A466911556e39210a6bB2FaECBB59E4eB7E43d',
       56: '0xa5f8C5Dbd5F286960b9d90548680aE5ebFf07652',

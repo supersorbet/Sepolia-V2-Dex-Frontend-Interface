@@ -1,5 +1,5 @@
 import { ChainId, Token, WETH9 } from '@pancakeswap/sdk'
-import { USDC_GOERLI_ARBI, USDT_GOERLI_ARBI, CAKE_GOERLI_ARBI, BUSD_GOERLI_ARBI, SWAPP_GOERLI_ARBI, USDC_ETH, USDT_ETH, SWAPP_ETH } from './common'
+import { USDC_GOERLI_ARBI, USDT_GOERLI_ARBI, CAKE_GOERLI_ARBI, BUSD_GOERLI_ARBI, SWAPP_GOERLI_ARBI, USDC_ETH, USDT_ETH, SWAPP_ETH, PEPL_ETH } from './common'
 
 export const goerliArbiTestnetTokens = {
   weth: WETH9[ChainId.GOERLI_ARBI],
@@ -12,6 +12,7 @@ export const goerliArbiTestnetTokens = {
     '',
   ),
   
+  pepl: PEPL_ETH,
   usdc: USDC_ETH,
   usdt: USDT_ETH,
   busd: BUSD_GOERLI_ARBI,

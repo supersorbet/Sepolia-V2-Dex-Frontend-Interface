@@ -2,22 +2,22 @@ import { SerializedFarmConfig } from '@pancakeswap/farms'
 import { goerliArbiTestnetTokens } from '@pancakeswap/tokens'
 
 const farms: SerializedFarmConfig[] = [
- // {
- //   pid: 0,
- //   lpSymbol: 'STEALINGFROMSTRIPPERS',
- //   lpAddress: '0x4E85579Ab75910b8CA409c7eDF2Ddfd88e994172',
- //   token: goerliArbiTestnetTokens.syrup,
- //   quoteToken: goerliArbiTestnetTokens.syrup,
- // },
-//  {
-//    pid: 0,
-//    lpSymbol: 'youllcowards',
-//    lpAddress: '0x32B4ceA791E2C8de0D2E29B18188058bd7eD41Eb',
-//    token: goerliArbiTestnetTokens.syrup,
-//    quoteToken: goerliArbiTestnetTokens.syrup,
-//  },
+  {
+    pid: 0,
+    lpSymbol: 'STEALINGFROMSTRIPPERS',
+    lpAddress: '0x4E85579Ab75910b8CA409c7eDF2Ddfd88e994172',
+    token: goerliArbiTestnetTokens.syrup,
+    quoteToken: goerliArbiTestnetTokens.syrup,
+  },
   {
     pid: 1,
+    lpSymbol: 'youllcowards',
+    lpAddress: '0x32B4ceA791E2C8de0D2E29B18188058bd7eD41Eb',
+    token: goerliArbiTestnetTokens.syrup,
+    quoteToken: goerliArbiTestnetTokens.syrup,
+  },
+  {
+    pid: 2,
     lpSymbol: 'COPE-ETH LP',
     lpAddress: '0xccc2C601DAedF48BE6F5f022862abbD254c97EE7',
     token: goerliArbiTestnetTokens.weth,

@@ -19,7 +19,7 @@ export default function useBUSDPrice(currency?: Currency): Price<Currency, Curre
   const { chainId } = useActiveWeb3React()
   const wrapped = currency?.wrapped
   const wnative = WNATIVE[chainId]
-  const stable = BUSD[chainId] || USDC[chainId]
+  const stable = USDC[chainId] || USDC[chainId]
 
   const tokenPairs: [Currency | undefined, Currency | undefined][] = useMemo(
     () => [
