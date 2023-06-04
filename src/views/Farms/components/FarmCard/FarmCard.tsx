@@ -20,7 +20,7 @@ const StyledCard = styled(Card)`
   max-width: 100%;
   margin: 0 0 24px 0;
   ${({ theme }) => theme.mediaQueries.sm} {
-    max-width: 350px;
+    max-width: 345px;
     margin: 0 12px 46px;
   }
 `
@@ -28,7 +28,7 @@ const StyledCard = styled(Card)`
 const FarmCardInnerContainer = styled(Flex)`
   flex-direction: column;
   justify-content: space-around;
-  padding: 24px;
+  padding: 22px;
 `
 
 const ExpandingWrapper = styled.div`
@@ -67,7 +67,7 @@ const FarmCard: React.FC<React.PropsWithChildren<FarmCardProps>> = ({
       ? `$${liquidity.toNumber().toLocaleString(undefined, { maximumFractionDigits: 0 })}`
       : ''
 
-  const lpLabel = farm.lpSymbol && farm.lpSymbol.toUpperCase().replace('PANCAKE', '')
+  const lpLabel = farm.lpSymbol && farm.lpSymbol.toUpperCase().replace('PEPEDEX', '')
   const earnLabel = farm.dual ? farm.dual.earnLabel : t('COPE + Fees')
 
   const liquidityUrlPathParts = getLiquidityUrlPathParts({
@@ -100,14 +100,14 @@ const FarmCard: React.FC<React.PropsWithChildren<FarmCardProps>> = ({
         />
         {!removed && (
           <Flex justifyContent="space-between" alignItems="center">
-            <Text>{t('APR')}:</Text>
-            <Text>{t('Deposit Fee: 4%')}:</Text>
+            <Text>{t('Deposit Fee: 3.99%')}:</Text> <Text>{t('APR')}:</Text>
+    
             <Text bold style={{ display: 'flex', alignItems: 'center' }}>
               {farm.apr ? (
                 <>
                   {farm.boosted ? (
                     <BoostedApr
-                      mr="4px"
+                      mr="14px"
                       lpRewardsApr={farm.lpRewardsApr}
                       apr={farm.apr}
                       pid={farm?.pid}
@@ -136,15 +136,19 @@ const FarmCard: React.FC<React.PropsWithChildren<FarmCardProps>> = ({
                   />
                 </>
               ) : (
-                <Skeleton height={24} width={80} />
+                <Skeleton height={24} width={84} />
               )}
             </Text>
+           
           </Flex>
         )}
         <Flex justifyContent="space-between">
           <Text>{t('Earn')}:</Text>
+          
           <Text bold>{earnLabel}</Text>
+          
         </Flex>
+
         <CardActionsContainer
           farm={farm}
           lpLabel={lpLabel}
@@ -153,7 +157,6 @@ const FarmCard: React.FC<React.PropsWithChildren<FarmCardProps>> = ({
           displayApr={displayApr}
         />
       </FarmCardInnerContainer>
-
       <ExpandingWrapper>
         <ExpandableSectionButton onClick={toggleExpandableSection} expanded={showExpandableSection} />
         {showExpandableSection && (
