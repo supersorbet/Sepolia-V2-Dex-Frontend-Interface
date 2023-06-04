@@ -3,7 +3,7 @@ import { SalesSectionProps } from '.'
 
 export const swapSectionData = (t: TranslateFunction): SalesSectionProps => ({
   headingText: t('Trade anything. No registration, no hassle.'),
-  bodyText: t('Trade any token on BNB Smart Chain in seconds, just by connecting your wallet.'),
+  bodyText: t('Trade any token on Ethereum Network in seconds, just by connecting your wallet.'),
   reverse: false,
   primaryButton: {
     to: '/swap',
@@ -27,7 +27,7 @@ export const swapSectionData = (t: TranslateFunction): SalesSectionProps => ({
 
 export const earnSectionData = (t: TranslateFunction): SalesSectionProps => ({
   headingText: t('Earn passive income with crypto.'),
-  bodyText: t('PancakeSwap makes it easy to make your crypto work for you.'),
+  bodyText: t('PepeDex makes it easy to make your crypto work for you. Let your frens work with you!'),
   reverse: true,
   primaryButton: {
     to: '/farms',
@@ -50,14 +50,14 @@ export const earnSectionData = (t: TranslateFunction): SalesSectionProps => ({
 })
 
 export const cakeSectionData = (t: TranslateFunction): SalesSectionProps => ({
-  headingText: t('CAKE makes our world go round.'),
+  headingText: t('Frens helping Frens, Simple As.'),
   bodyText: t(
-    'CAKE token is at the heart of the PancakeSwap ecosystem. Buy it, win it, farm it, spend it, stake it... heck, you can even vote with it!',
+    'All Pools Revolve Around PEPL, COPE, and SEETHE Tokens in the PepeDex Ecosystem',
   ),
   reverse: false,
   primaryButton: {
     to: '/swap?outputCurrency=0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82&chainId=56',
-    text: t('Buy CAKE'),
+    text: t('Buy COPE'),
     external: false,
   },
   secondaryButton: {
