@@ -10,11 +10,11 @@ const StyledBannerImageWrapper = styled.div`
   overflow: hidden;
 
   ${({ theme }) => theme.mediaQueries.sm} {
-    height: 192px;
+    height: 1px;
   }
 
   ${({ theme }) => theme.mediaQueries.md} {
-    height: 256px;
+    height: 1px;
   }
 `
 
