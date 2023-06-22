@@ -6,7 +6,7 @@ import { BUSD, CAKE } from '@pancakeswap/tokens'
 import { farmFetcher } from './helper'
 import { FarmKV, FarmResult } from './kv'
 import { updateLPsAPR } from './lpApr'
-import { bscProvider, bscTestnetProvider, goerliArbiProvider } from './provider'
+import { bscProvider, goerliProvider, goerliArbiProvider } from './provider'
 
 const pairAbi = [
   {

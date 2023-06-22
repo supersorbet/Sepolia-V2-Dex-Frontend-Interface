@@ -251,6 +251,14 @@ export const SWAPP_ETH = new Token(
   'COPE',
   '',
 )
+export const CAKE_GOERLI = new Token(
+  ChainId.GOERLI,
+  '0x8d6B6Bd25700Ec70F1C66A5951e2028076509ccB',
+  18,
+  'COPE',
+  'COPE',
+  '',
+)
 
 export const BUSD: Record<ChainId, Token> = {
   [ChainId.ETHEREUM]: BUSD_ETH,
@@ -266,6 +274,7 @@ export const CAKE = {
   [ChainId.BSC_TESTNET]: CAKE_TESTNET,
   [ChainId.GOERLI_ARBI]: SWAPP_ETH,
   [ChainId.ETHEREUM]: SWAPP_GOERLI_ARBI,
+  [ChainId.GOERLI]: CAKE_GOERLI
 }
 
 export const USDC = {
