@@ -13,8 +13,10 @@ export const masterChefAddresses = {
   56: '0xa5f8C5Dbd5F286960b9d90548680aE5ebFf07652',
   421613: '0xba53A1aF0aeB5247A2eeF4098cC85b4B1C853E28',
   1: '0x3E20Df3d9b8e0229283efC96F326D9dFe9659A8F', 
+  5: '0xC7595cc50303F95218327B2D563c5D5129C86D37',
 }
 
-export const nonBSCVaultAddresses = {
+/* export const nonBSCVaultAddresses = {
   5: '0x8CB958bBdb45597cc918147469eb650A9397aBDA',
 }
+*/

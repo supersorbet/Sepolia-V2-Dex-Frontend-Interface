@@ -2,7 +2,7 @@ import { MultiCallV2 } from '@pancakeswap/multicall'
 import { ChainId } from '@pancakeswap/sdk'
 import chunk from 'lodash/chunk'
 import { SerializedFarmPublicData, SerializedFarmConfig } from './types'
-import { nonBSCVaultAddresses } from './const'
+// import { nonBSCVaultAddresses } from './const'
 
 const abi = [
   {
@@ -76,7 +76,7 @@ export const fetchPublicFarmsData = async (
   masterChefAddress: string,
 ): Promise<any[]> => {
   try {
-    const farmCalls = farms.flatMap((farm) => fetchFarmCalls(farm, masterChefAddress, nonBSCVaultAddresses[chainId]))
+    const farmCalls = farms.flatMap((farm) => fetchFarmCalls(farm, masterChefAddress [chainId]))
     const chunkSize = farmCalls.length / farms.length
     const farmMultiCallResult = await multicall({ abi, calls: farmCalls, chainId })
     return chunk(farmMultiCallResult, chunkSize)
