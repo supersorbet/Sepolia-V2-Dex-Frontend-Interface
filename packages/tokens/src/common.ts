@@ -251,7 +251,14 @@ export const SWAPP_ETH = new Token(
   'COPE',
   '',
 )
-
+export const CAKE_GOERLI = new Token(
+  ChainId.GOERLI,
+  '0x313914Cc58261FB4e6b62bdd4efF1B2F63aA10c4',
+  18,
+  'COPE',
+  'COPE',
+  '',
+)
 export const BUSD: Record<ChainId, Token> = {
   [ChainId.ETHEREUM]: BUSD_ETH,
   [ChainId.RINKEBY]: BUSD_RINKEBY,
