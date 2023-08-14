@@ -48,7 +48,7 @@ export default function CurrencyLogo({
       <StyledLogo
         size={size}
         srcs={[
-          currency.chainId === 421613
+          currency.chainId === 8453
             ? 'https://cdn.o3.network/token-profile/arbitrum/0x0000000000000000000000000000000000000000/logo.png'
             : `/images/chains/${currency.chainId}.png`,
         ]}

@@ -116,17 +116,17 @@ export const bscTest: Chain = {
 }
 
 export const arbitrumGoerli: Chain = {
-  id: 421613,
-  name: 'Arbitrum Goerli Testnet',
-  network: 'arbitrumGoerli-testnet',
+  id: 8453,
+  name: 'Base',
+  network: 'BASE',
   nativeCurrency: {
     decimals: 18,
     name: 'Ether Token',
     symbol: 'ETH',
   },
   rpcUrls: {
-    public: 'https://goerli-rollup.arbitrum.io/rpc',
-    default: 'https://goerli-rollup.arbitrum.io/rpc',
+    public: 'https://base-mainnet.public.blastapi.io',
+    default: 'https://base-mainnet.public.blastapi.io',
   },
   blockExplorers: {
     default: { name: 'ArbiCcan', url: 'https://goerli.arbiscan.io' },

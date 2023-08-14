@@ -213,7 +213,7 @@
     {
       "name": "Wrapped ETH",
       "symbol": "WETH",
-      "address": "0xD495CE3454eF4C4AF0b52190B02cf0Af209A5656",
+      "address": "0xb9f4305c026A63De86DD18cBbBf5baC168a68EE9",
       "chainId": 421613,
       "decimals": 18,
       "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2/logo.png"
