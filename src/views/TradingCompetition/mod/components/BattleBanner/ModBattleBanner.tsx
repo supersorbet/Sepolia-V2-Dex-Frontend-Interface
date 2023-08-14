@@ -130,7 +130,7 @@ const StyledHeading1Wrapper = styled(Heading1Text)`
 const StyledHeading1Text = styled.div`
   position: relative;
   top: -10px;
-  font-family: 'Kanit';
+  font-family: 'Orbitron';
   font-style: normal;
   font-weight: 700;
   font-size: 46px;
