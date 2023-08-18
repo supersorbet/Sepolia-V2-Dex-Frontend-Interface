@@ -196,7 +196,7 @@ export const getCakeContract = (signer?: Signer | Provider, chainId?: number) =>
   }) as Cake
 }
 export const getProfileContract = (signer?: Signer | Provider) => {
-  return getContract({ abi: profileABI, address: getPancakeProfileAddress(), signer }) as PancakeProfile
+  return null // getContract({ abi: profileABI, address: getPancakeProfileAddress(), signer }) as PancakeProfile
 }
 export const getPancakeBunniesContract = (signer?: Signer | Provider) => {
   return getContract({ abi: pancakeBunniesAbi, address: getPancakeBunniesAddress(), signer }) as PancakeBunnies

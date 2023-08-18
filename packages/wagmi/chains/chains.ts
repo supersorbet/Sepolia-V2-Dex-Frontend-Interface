@@ -115,9 +115,9 @@ export const bscTest: Chain = {
   testnet: true,
 }
 
-export const ethmainnet: Chain = {
-  id: 421613,
-  name: 'Arbitrum Goerli Testnet',
+export const arbitrumGoerli: Chain = {
+  id: 8453,
+  name: 'Base',
   network: 'arbitrumGoerli-testnet',
   nativeCurrency: {
     decimals: 18,
@@ -125,11 +125,11 @@ export const ethmainnet: Chain = {
     symbol: 'ETH',
   },
   rpcUrls: {
-    public: 'https://goerli-rollup.arbitrum.io/rpc',
-    default: 'https://goerli-rollup.arbitrum.io/rpc',
+    public: 'https://developer-access-mainnet.base.org',
+    default: 'https://developer-access-mainnet.base.org',
   },
   blockExplorers: {
-    default: { name: 'ArbiCcan', url: 'https://goerli.arbiscan.io' },
+    default: { name: 'ArbiCcan', url: 'https://basescan.org' },
   },
   multicall: {
     address: '0x4f00CF3207f80397b89445a0f6Fe8ab268E0ecB3',
@@ -138,7 +138,8 @@ export const ethmainnet: Chain = {
   testnet: true,
 }
 
-export const arbitrumGoerli: Chain = {
+
+export const ethmainnet: Chain = {
   id: 1,
   name: 'Ethereum',
   network: 'eth',
