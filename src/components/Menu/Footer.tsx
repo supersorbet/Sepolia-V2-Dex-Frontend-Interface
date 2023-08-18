@@ -48,19 +48,19 @@ const Footer: React.FC<React.PropsWithChildren<{ variant?: FooterVariant; helpUr
     <Wrapper $isSide={isSide}>
       <Flex flexDirection={isSide ? 'column' : ['column', 'column', 'row']} alignItems="center">
         <ButtonMenu variant="subtle" scale="sm" activeIndex={0}>
-          <ButtonMenuItem>V2</ButtonMenuItem>
-          <ButtonMenuItem as="a" href="https://v1exchange.pancakeswap.finance/#/">
-            {t('V1 (old)')}
+          <ButtonMenuItem></ButtonMenuItem>
+          <ButtonMenuItem as="a" href="https://bridge.base.org/deposit">
+            {t('Official ETH->BASE Bridge')}
           </ButtonMenuItem>
         </ButtonMenu>
         <LinkExternal
           id="ercBridge"
-          href="https://docs.binance.org/smart-chain/guides/cross-chain.html"
+          href="https://app.squidrouter.com/"
           ml={[0, 0, '40px']}
           mt={['20px', '20px', isSide ? '20px' : 0]}
           mb={['8px', '8px', 0]}
-        >
-          {t('Convert ERC-20 to BEP-20')}
+        > 
+          {t('Crosschain Swap Tokens to Base in less than a minute on Squidrouter!⚡⚡⚡')}
         </LinkExternal>
       </Flex>
       {isSide && <Flex flexGrow={1} />}
@@ -69,7 +69,7 @@ const Footer: React.FC<React.PropsWithChildren<{ variant?: FooterVariant; helpUr
         alignItems="center"
         width={['100%', '100%', '100%', isSide ? '100%' : 'auto']}
         justifyContent={['center', 'center', 'center', 'flex-end']}
-      >
+      > 
         <BubbleWrapper>
           <Button id="clickExchangeHelp" as="a" external href={helpUrl} variant="subtle">
             {t('Need help ?')}

@@ -106,11 +106,11 @@ const ShareImageModal: React.FC<React.PropsWithChildren<ShareImageModalProps>> =
       // ctx.drawImage(profileOverlayImage, 0, 0, canvasWidth * 0.235, canvasWidth * 0.235)
       ctx.drawImage(medalImage, canvasWidth * 0.15, canvasHeight * 0.32, canvasWidth * 0.06, canvasWidth * 0.06)
 
-      ctx.font = 'bold 84px Kanit'
+      ctx.font = 'bold 84px Quantico'
       ctx.fillStyle = 'white'
       ctx.fillText(`@${profile.username}`, canvasWidth * 0.033, canvasHeight * 0.53)
 
-      ctx.font = 'bold 72px Kanit'
+      ctx.font = 'bold 72px Quantico'
       ctx.fillText(`# ${team.toLocaleString()}`, canvasWidth * 0.18, canvasHeight * 0.69)
       ctx.fillText(`# ${global.toLocaleString()}`, canvasWidth * 0.18, canvasHeight * 0.79)
       ctx.fillText(`$ ${localiseTradingVolume(volume)}`, canvasWidth * 0.18, canvasHeight * 0.89)
