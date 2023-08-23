@@ -17,7 +17,7 @@ const config = [
         no participation fee.
       </Trans>,
       <Trans>
-        In the Public Sale, everyone with an active PancakeSwap profile can commit. However the maximum amount of CAKE
+        In the Public Sale, everyone with an active PepeDex profile can commit. However the maximum amount of CAKE
         users can commit, is equal to the number of iCAKE they have.
       </Trans>,
       <>
@@ -37,7 +37,7 @@ const config = [
         We recommend you to check if you are eligible to participate in the Private Sale first. In the Public Sale, if
         the amount you commit is too small, you may not receive a meaningful amount of IFO tokens.
       </Trans>,
-      <Trans>Just remember you need an active PancakeSwap Profile in order to participate.</Trans>,
+      <Trans>Just remember you need an active PepeDex Profile in order to participate.</Trans>,
     ],
   },
   {

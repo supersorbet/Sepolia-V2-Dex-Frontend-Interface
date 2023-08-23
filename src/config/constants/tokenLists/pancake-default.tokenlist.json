@@ -1,5 +1,5 @@
 {
-  "name": "PancakeSwap Default List",
+  "name": "PepeDex Default List",
   "timestamp": "2022-01-26T11:45:09Z",
   "version": {
     "major": 4,
@@ -51,7 +51,7 @@
       "logoURI": "https://pancakeswap.finance/images/tokens/0x55d398326f99059fF775485246999027B3197955.png"
     },
     {
-      "name": "PancakeSwap Token",
+      "name": "PepeDex Token",
       "symbol": "CAKE",
       "address": "0x0E09FaBB73Bd3Ade0a17ECC321fD13a19e81cE82",
       "chainId": 56,
@@ -115,7 +115,7 @@
       "logoURI": "https://pancakeswap.finance/images/tokens/0xA7f552078dcC247C2684336020c03648500C6d9F.png"
     },
     {
-      "name": "PancakeSwap Token",
+      "name": "PepeDex Token",
       "symbol": "CAKE",
       "address": "0xFa60D973F7642B748046464e165A65B7323b0DEE",
       "chainId": 97,
@@ -243,7 +243,7 @@
       "logoURI": "https://pancakeswap.finance/images/tokens/0x8AC76a51cc950d9822D68b83fE1Ad97B32Cd580d.png"
     },
     {
-      "name": "PancakeSwap Token",
+      "name": "PepeDex Token",
       "symbol": "CAKE",
       "address": "0x33d6f54e0C252623bc7541FE80860a88a1e4C40b",
       "chainId": 421613,

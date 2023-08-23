@@ -34,7 +34,7 @@ const ModPrizesText = () => {
         )}
       </Text>
       <Text mt="10px">{t('In addition to token prizes there are NFT rewards:')}</Text>
-      <Text>A. {t('300 newly-designed PancakeSwap NFTs to the Top 100 Traders in each team.')}</Text>
+      <Text>A. {t('300 newly-designed PepeDex NFTs to the Top 100 Traders in each team.')}</Text>
       <Text>B. {t('100 Mines of Dalarnia NFTs to the Top 100 Traders ranked by the $DAR Trading Volume.')}</Text>
       <ImageWrapper>
         <Image src={FlipperBunny} alt="Flipper bunny" width={270} height={293} />

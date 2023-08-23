@@ -9,7 +9,7 @@ export const ChainLogo = memo(({ chainId }: { chainId: number }) => {
       <Image
         src={
           chainId === 8453
-            ? 'https://cdn.o3.network/token-profile/arbitrum/0x0000000000000000000000000000000000000000/logo.png'
+            ? 'https://www.dackieswap.xyz/images/chains/8453.png'
             : `/images/chains/${chainId}.png`
         }
         width={24}
