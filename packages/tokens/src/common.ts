@@ -20,7 +20,7 @@ export const CAKE_TESTNET = new Token(
 
 export const CAKE_GOERLI_ARBI = new Token(
   ChainId.GOERLI_ARBI,
-  '0xA60B03445F5e79379dc17607B6DE9d7Ae533034c',
+  '0x78a087d713Be963Bf307b18F2Ff8122EF9A63ae9',
   18,
   'CAKE',
   'PancakeSwap Token',
@@ -154,7 +154,7 @@ export const BUSD_GOERLI_ARBI = new Token(
 
 export const SWAPP_GOERLI_ARBI = new Token(
   ChainId.GOERLI_ARBI,
-  '0xA60B03445F5e79379dc17607B6DE9d7Ae533034c',
+  '0x78a087d713Be963Bf307b18F2Ff8122EF9A63ae9',
   18,
   'SWAPP',
   'SWAPP',

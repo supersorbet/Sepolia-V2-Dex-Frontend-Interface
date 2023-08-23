@@ -197,10 +197,10 @@ export default function StableSwapForm({ setIsChartDisplayed, isChartDisplayed }
       <CurrencyInputHeader
         title={
           <Flex>
-            {t('StableSwap')}
+            {t('')}
             <InfoTooltip
-              ml="4px"
-              text="StableSwap provides better rates and lower fees for pairs with highly correlated prices"
+              ml="0px"
+              text=""
             />
           </Flex>
         }
@@ -294,7 +294,7 @@ export default function StableSwapForm({ setIsChartDisplayed, isChartDisplayed }
             </AutoColumn>
           )}
         </AutoColumn>
-        <Box mt="0.25rem">
+        <Box mt="0rem">
           <StableSwapCommitButton
             account={account}
             approval={approval}
