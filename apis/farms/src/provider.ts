@@ -24,14 +24,14 @@ export const goerliProvider = new StaticJsonRpcProvider(
   5,
 )
 
-export const goerliArbiProvider = new StaticJsonRpcProvider(
+export const ethProvider = new StaticJsonRpcProvider(
   {
     url: 'https://mainnet.infura.io/v3/', // https://mainnet.infura.io/v3/
     skipFetchSetup: true,
   },
   1,
 )
-export const ethmainnet = new StaticJsonRpcProvider(
+export const goerliArbiProvider = new StaticJsonRpcProvider(
   {
     url: 'https://goerli-rollup.arbitrum.io/rpc', // https://mainnet.infura.io/v3/
     skipFetchSetup: true,

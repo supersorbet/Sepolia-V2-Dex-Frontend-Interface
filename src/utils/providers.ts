@@ -4,4 +4,8 @@ export const BSC_PROD_NODE = process.env.NEXT_PUBLIC_NODE_PRODUCTION || 'https:/
 
 export const bscRpcProvider = new StaticJsonRpcProvider(BSC_PROD_NODE)
 
+export const BASE_PROD_NODE = 'https://mainnet.base.org'
+export const baseRpcProvider = new StaticJsonRpcProvider(BASE_PROD_NODE)
+
+
 export default null

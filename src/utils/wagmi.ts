@@ -10,11 +10,11 @@ import { jsonRpcProvider } from 'wagmi/providers/jsonRpc'
 import { SafeConnector } from '@gnosis.pm/safe-apps-wagmi'
 
 const CHAINS = [
-  bsc,
+//  bsc,
   // TODO: ETH
   // mainnet,
-  bscTest,
-  rinkeby,
+ // bscTest,
+ // rinkeby,
   goerli,
   arbitrumGoerli,
   ethmainnet,
@@ -57,7 +57,7 @@ const getNodeRealUrl = (networkName: string) => {
 export const { provider, chains } = configureChains(CHAINS, [
   jsonRpcProvider({
     rpc: (chain) => {
-      if (!!process.env.NEXT_PUBLIC_NODE_PRODUCTION && chain.id === bsc.id) {
+      if (!!process.env.NEXT_PUBLIC_NODE_PRODUCTION && chain.id === ethmainnet.id) {
         return { http: process.env.NEXT_PUBLIC_NODE_PRODUCTION }
       }
       return getNodeRealUrl(chain.network) || { http: chain.rpcUrls.default }
@@ -77,7 +77,7 @@ export const coinbaseConnector = new CoinbaseWalletConnector({
   chains,
   options: {
     appName: 'PepeDex',
-    appLogoUrl: 'https://pancakeswap.com/logo.png',
+    appLogoUrl: 'https://pepepals.pepepal.com/pepllogo.png',
   },
 })
 

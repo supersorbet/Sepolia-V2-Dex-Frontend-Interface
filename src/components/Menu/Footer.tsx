@@ -12,7 +12,7 @@ const Wrapper = memo(styled.div<{ $isSide: boolean }>`
   flex-wrap: wrap;
   align-items: center;
   padding-top: 16px;
-  padding-right: ${({ $isSide }) => ($isSide ? '32px' : '0px')};
+  padding-right: ${({ $isSide }) => ($isSide ? '12px' : '0px')};
   ${({ theme }) => theme.mediaQueries.md} {
     justify-content: space-between;
     flex-direction: ${({ $isSide }) => ($isSide ? 'column' : 'row')};
@@ -56,11 +56,11 @@ const Footer: React.FC<React.PropsWithChildren<{ variant?: FooterVariant; helpUr
         <LinkExternal
           id="ercBridge"
           href="https://app.squidrouter.com/"
-          ml={[0, 0, '40px']}
-          mt={['20px', '20px', isSide ? '20px' : 0]}
+          ml={[0, 0, '20px']}
+          mt={['10px', '20px', isSide ? '20px' : 0]}
           mb={['8px', '8px', 0]}
         > 
-          {t('Crosschain Swap Tokens to Base in less than a minute on Squidrouter!⚡⚡⚡')}
+          {t('Swap Tokens to Base in less than a minute on Squidrouter!⚡⚡⚡')}
         </LinkExternal>
       </Flex>
       {isSide && <Flex flexGrow={1} />}

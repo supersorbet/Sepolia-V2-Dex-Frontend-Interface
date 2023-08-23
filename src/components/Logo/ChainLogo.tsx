@@ -9,7 +9,7 @@ export const ChainLogo = memo(({ chainId }: { chainId: number }) => {
       <Image
         src={
           chainId === 8453
-            ? 'https://basescan.org/images/logo-symbol.svg'
+            ? 'https://www.dackieswap.xyz/images/chains/8453.png'
             : `/images/chains/${chainId}.png`
         }
         width={24}

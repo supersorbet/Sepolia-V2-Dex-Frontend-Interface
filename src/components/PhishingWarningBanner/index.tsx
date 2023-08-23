@@ -10,10 +10,10 @@ const Container = styled(Flex)`
   padding: 12px;
   align-items: center;
   background: linear-gradient(0deg, rgba(39, 38, 44, 0.4), rgba(39, 38, 44, 0.4)),
-    linear-gradient(180deg, #8051d6 0%, #492286 100%);
+    linear-gradient(180deg, #57d451 0%, #fec321 100%);
   ${({ theme }) => theme.mediaQueries.md} {
     padding: 0px;
-    background: linear-gradient(180deg, #8051d6 0%, #492286 100%);
+    background: linear-gradient(180deg, #57d451 0%, #fec321 100%);
   }
 `
 
@@ -40,13 +40,15 @@ const SpeechBubble = styled.div`
   }
 `
 
+const domain = 'https://pepedex.pepepal.com'
+
 const PhishingWarningBanner: React.FC<React.PropsWithChildren> = () => {
   const { t } = useTranslation()
   const [, hideBanner] = usePhishingBannerManager()
   const { isMobile, isMd } = useMatchBreakpoints()
   const warningTextAsParts = useMemo(() => {
-    const warningText = t("please make sure you're visiting https://pepedex.pepepal.com/ - check the URL carefully.")
-    return warningText.split(/(https:\/\/pancakeswap.finance)/g)
+    const warningText = t("please make sure you're visiting %domain% - check the URL carefully.", { domain })
+    return warningText.split(/(https:\/\/pepepal.com)/g)
   }, [t])
   const warningTextComponent = (
     <>
@@ -59,8 +61,8 @@ const PhishingWarningBanner: React.FC<React.PropsWithChildren> = () => {
           key={i}
           small
           as="span"
-          bold={text === 'https://pepedex.pepepal.com/'}
-          color={text === 'https://pepedex.pepepal.com/' ? '#FFFFFF' : '#BDC2C4'}
+          bold={text === domain}
+          color={text === domain ? '#FFFFFF' : '#BDC2C4'}
         >
           {text}
         </Text>

@@ -49,7 +49,7 @@ export default function CurrencyLogo({
         size={size}
         srcs={[
           currency.chainId === 8453
-            ? 'https://basescan.org/images/logo-symbol.svg'
+            ? 'https://www.dackieswap.xyz/images/chains/8453.png'
             : `/images/chains/${currency.chainId}.png`,
         ]}
         width={size}

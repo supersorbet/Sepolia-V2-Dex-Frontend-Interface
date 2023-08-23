@@ -139,16 +139,8 @@ export const lightColors = {
   gradientViolet: 'linear-gradient(180deg, #E2C9FB 0%, #CDB8FA 100%)',
   gradientVioletAlt: 'linear-gradient(180deg, #CBD7EF 0%, #9A9FD0 100%)',
   gradientGold: 'linear-gradient(180deg, #FFD800 0%, #FDAB32 100%)',
-//  gradientBold: 'linear-gradient(#38bae5, #ed4b9e)',
-
-//  brandcolour: 'linear-gradient(180deg, #09070c 22%, #9370DB 100%)',
-//  backgroundImage: `url(https://raw.githubusercontent.com/SVerseLab/images/master/Box.jpg)`, // These are background grid images
-//  backgroundBridge: `url(https://raw.githubusercontent.com/SVerseLab/images/master/BG_EDITTED.png)`,
-//  HeaderImage: `url(https://raw.githubusercontent.com/SVerseLab/images/master/netbackground.png)`,
-//  backgroundImageDesktop: `url(https://raw.githubusercontent.com/SVerseLab/images/master/mobile-background.png)`,
-//  coneDesktop: `url(https://raw.githubusercontent.com/SVerseLab/images/master/coneback.png)`,
+  gradientBold: 'linear-gradient(#38bae5, #ed4b9e)',
 }
-
 
 export const darkColors = {
   ...baseColors,
@@ -163,7 +155,7 @@ export const darkColors = {
   contrast: '#FFFFFF',
   dropdown: '#1E1D20',
   dropdownDeep: '#100C18',
-  invertedContrast: '#fec321',
+  invertedContrast: '#332f3a',
   input: '#423e4a',
   inputSecondary: '#262130',
   primaryDark: '#0098A1',
@@ -176,15 +168,9 @@ export const darkColors = {
   gradientBubblegum: 'linear-gradient(139.73deg, #333333 0%, #000000 100%)',
   gradientInverseBubblegum: 'linear-gradient(139.73deg, #000000 0%, #333333 100%)',
   gradientCardHeader: 'linear-gradient(166.77deg, #3B4155 0%, #3A3045 100%)',
-  gradientBlue: 'linear-gradient(180deg, #00707F 0%, #19778C 100%)',
+  gradientBlue: 'linear-gradient(180deg, #1ad918 0%, #19778C 100%)',
   gradientViolet: 'linear-gradient(180deg, #6C4999 0%, #6D4DB2 100%)',
   gradientVioletAlt: 'linear-gradient(180deg, #1ad918 0%, #d86d01 100%)',
   gradientGold: 'linear-gradient(180deg, #FFD800 0%, #FDAB32 100%)',
-//  gradientBold: 'linear-gradient(#38bae5, #ed4b9e)',
-//  brandcolour: 'linear-gradient(180deg, #09070c 22%, #9370DB 100%)',
-//  backgroundImage: `url(https://raw.githubusercontent.com/SVerseLab/images/master/Box.jpg)`,
-//  backgroundBridge: `url(https://raw.githubusercontent.com/SVerseLab/images/master/BG_EDITTED.png)`,
-//  HeaderImage: `url(https://raw.githubusercontent.com/SVerseLab/images/master/netbackground.png)`,
-//  backgroundImageDesktop: `url(https://c4.wallpaperflare.com/wallpaper/183/760/918/vaporwave-synthwave-retrowave-hd-wallpaper-preview.jpg)`,
-//  coneDesktop: `url(https://raw.githubusercontent.com/SVerseLab/images/master/coneback.png)`,
+  gradientBold: 'linear-gradient(#1ad918, #ed4b9e)',
 }
