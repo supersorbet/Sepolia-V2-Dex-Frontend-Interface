@@ -22,7 +22,7 @@ import SwapTab, { SwapType } from './components/SwapTab'
 const CHART_SUPPORT_CHAIN_IDS = [ChainId.BSC, ChainId.ETHEREUM, ChainId.GOERLI_ARBI, ChainId.GOERLI]
 export const ACCESS_TOKEN_SUPPORT_CHAIN_IDS = [ChainId.BSC]
 
-const STABLE_SUPPORT_CHAIN_IDS = [ChainId.ETHEREUM, ChainId.GOERLI_ARBI, ChainId.BSC_TESTNET]
+const STABLE_SUPPORT_CHAIN_IDS = [ChainId.BSC_TESTNET]
 
 export default function Swap() {
   const { isMobile } = useMatchBreakpoints()
@@ -104,7 +104,7 @@ export default function Swap() {
               <AppBody>
                 <SwapTab showStable={isStableSupported}>
                   {(swapTypeState) =>
-                    swapTypeState === SwapType.STABLE_SWAP ? (
+                    swapTypeState === SwapType ? (
                       <StableSwapFormContainer
                         setIsChartDisplayed={setIsChartDisplayed}
                         isChartDisplayed={isChartDisplayed}

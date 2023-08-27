@@ -5,16 +5,16 @@ import {
   SwapFillIcon,
   EarnFillIcon,
   EarnIcon,
-  TrophyIcon,
-  TrophyFillIcon,
+ // TrophyIcon,
+ // TrophyFillIcon,
   NftIcon,
   NftFillIcon,
   MoreIcon,
 } from '@pancakeswap/uikit'
 import { ContextApi } from '@pancakeswap/localization'
 import { nftsBaseUrl } from 'views/Nft/market/constants'
-import { perpLangMap } from 'utils/getPerpetualLanguageCode'
-import { perpTheme } from 'utils/getPerpetualTheme'
+// import { perpLangMap } from 'utils/getPerpetualLanguageCode'
+// import { perpTheme } from 'utils/getPerpetualTheme'
 import { DropdownMenuItems } from '@pancakeswap/uikit/src/components/DropdownMenu/types'
 import { SUPPORT_ONLY_BSC } from 'config/constants/supportChains'
 
@@ -54,17 +54,17 @@ const config: (
           label: t('Swap'),
           href: '/swap',
         },
-        {
+       /* {
           label: t('Limit'),
           href: '/limit-orders',
           supportChainIds: SUPPORT_ONLY_BSC,
           image: '/images/decorations/3d-coin.png',
-        },
+        }, */
         {
           label: t('Liquidity'),
           href: '/liquidity',
         },
-        {
+       /* {
           label: t('Perpetual'),
           href: `https://perp.pancakeswap.finance/${perpLangMap(languageCode)}/futures/BTCUSDT?theme=${perpTheme(
             isDark,
@@ -75,7 +75,7 @@ const config: (
           label: t('Bridge'),
           href: 'https://bridge.pancakeswap.finance/',
           type: DropdownMenuItemType.EXTERNAL_LINK,
-        },
+        }, */
       ].map((item) => addMenuItemSupported(item, chainId)),
     },
     {
@@ -97,7 +97,7 @@ const config: (
         },
       ].map((item) => addMenuItemSupported(item, chainId)),
     },
-    {
+  /*  {
       label: t('Win'),
       href: '/prediction',
       icon: TrophyIcon,
@@ -126,7 +126,7 @@ const config: (
           image: '/images/decorations/lottery.png',
         },
       ],
-    },
+    }, */
     {
       label: t('NFT Amm'),
       href: `${nftsBaseUrl}`,
@@ -175,7 +175,7 @@ const config: (
         {
           type: DropdownMenuItemType.DIVIDER,
         },
-        {
+      /*  {
           label: t('Leaderboard'),
           href: '/teams',
           supportChainIds: SUPPORT_ONLY_BSC,
@@ -193,7 +193,7 @@ const config: (
           label: t('Docs'),
           href: 'https://docs.pancakeswap.finance',
           type: DropdownMenuItemType.EXTERNAL_LINK,
-        },
+        }, */
       ].map((item) => addMenuItemSupported(item, chainId)),
     },
   ].map((item) => addMenuItemSupported(item, chainId))
