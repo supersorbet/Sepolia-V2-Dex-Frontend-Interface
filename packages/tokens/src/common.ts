@@ -67,8 +67,8 @@ export const USDC_GOERLI_ARBI = new Token(
   ChainId.GOERLI_ARBI,
   '0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA',
   6,
-  'USDC',
-  'USD Coin',
+  'USDbC',
+  'Base USD Coin',
 )
 
 export const USDT_BSC = new Token(
@@ -91,11 +91,11 @@ export const USDT_ETH = new Token(
 
 export const USDT_GOERLI_ARBI = new Token(
   ChainId.GOERLI_ARBI,
-  '0xD5Fe27B151c0E10696fF31d56db4Dfd91ed487a1',
-  6,
-  'USDT',
-  'Tether USD',
-  'https://tether.to/',
+  '0x50c5725949A6F0c72E6C4a641F24049A917DB0Cb',
+  18,
+  'DAI',
+  'DAI Stablecoin',
+  'https://makerdao.com/',
 )
 
 export const BUSD_BSC = new Token(
@@ -154,11 +154,11 @@ export const BUSD_GOERLI_ARBI = new Token(
 
 export const SWAPP_GOERLI_ARBI = new Token(
   ChainId.GOERLI_ARBI,
-  '0x78a087d713Be963Bf307b18F2Ff8122EF9A63ae9',
+  '0x7054D3cdAB1a693e1F6bFc29Dce33FE222ea6164',
   18,
-  'SWAPP',
-  'SWAPP',
-  '',
+  'COPE',
+  'CopeV2',
+  'https://www.pngkit.com/png/detail/103-1034137_nekojiru-tumblr-nekojiru-sou.png',
 )
 export const CAKE_ETH = new Token(
   ChainId.ETHEREUM,

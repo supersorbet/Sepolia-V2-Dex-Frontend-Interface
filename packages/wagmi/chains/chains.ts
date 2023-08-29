@@ -129,7 +129,7 @@ export const arbitrumGoerli: Chain = {
     default: 'https://base-mainnet.public.blastapi.io',
   },
   blockExplorers: {
-    default: { name: 'ArbiCcan', url: 'https://goerli.arbiscan.io' },
+    default: { name: 'BaseScan', url: 'https://basescan.org/' },
   },
   multicall: {
     address: '0x4f00CF3207f80397b89445a0f6Fe8ab268E0ecB3',
