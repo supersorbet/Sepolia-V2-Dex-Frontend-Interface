@@ -145,11 +145,11 @@ export const BUSD_GOERLI = new Token(
 
 export const BUSD_GOERLI_ARBI = new Token(
   ChainId.GOERLI_ARBI,
-  '0x3B1Fdb2f0B835bdEdADE95EC8949CfbBcf8D85cf',
-  18,
-  'BUSD',
-  'Binance USD',
-  'https://www.paxos.com/busd/',
+  '0xEB466342C4d449BC9f53A865D5Cb90586f405215',
+  6,
+  'axlUSDC',
+  'Axelar Wrapped USDC',
+  'https://app.squidrouter.com',
 )
 
 export const SWAPP_GOERLI_ARBI = new Token(
