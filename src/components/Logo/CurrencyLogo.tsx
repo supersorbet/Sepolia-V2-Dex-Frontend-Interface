@@ -49,7 +49,7 @@ export default function CurrencyLogo({
         size={size}
         srcs={[
           currency.chainId === 8453
-            ? 'https://cdn.o3.network/token-profile/arbitrum/0x0000000000000000000000000000000000000000/logo.png'
+            ? 'https://bridge.base.org/icons/base.svg'
             : `/images/chains/${currency.chainId}.png`,
         ]}
         width={size}
