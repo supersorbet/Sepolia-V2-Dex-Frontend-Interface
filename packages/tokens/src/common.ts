@@ -22,7 +22,7 @@ export const CAKE_GOERLI_ARBI = new Token(
   ChainId.GOERLI_ARBI,
   '0x78a087d713Be963Bf307b18F2Ff8122EF9A63ae9',
   18,
-  'CAKE',
+  'COPE',
   'PepeDex Token',
   'https://pancakeswap.finance/',
 )

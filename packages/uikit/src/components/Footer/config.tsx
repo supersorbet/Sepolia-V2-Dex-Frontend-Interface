@@ -4,48 +4,20 @@ import { TwitterIcon, TelegramIcon, RedditIcon, InstagramIcon, GithubIcon, Disco
 
 export const footerLinks: FooterLinkType[] = [
   {
-    label: "About",
+    label: "",
     items: [
       {
-        label: "Contact",
-        href: "https://docs.pancakeswap.finance/contact-us",
-      },
-      {
-        label: "Blog",
-        href: "https://medium.com/pancakeswap",
-      },
-      {
-        label: "Community",
-        href: "https://docs.pancakeswap.finance/contact-us/telegram",
-      },
-      {
-        label: "CAKE",
-        href: "https://docs.pancakeswap.finance/tokenomics/cake",
-      },
-      {
-        label: "—",
-      },
-      {
-        label: "Online Store",
-        href: "https://pancakeswap.creator-spring.com/",
-        isHighlighted: true,
+        label: "",
+        href: "https://rxqueen.neocities.org/ac/newhorizons",
       },
     ],
   },
   {
-    label: "Help",
+    label: "...",
     items: [
       {
-        label: "Customer",
-        href: "Support https://docs.pancakeswap.finance/contact-us/customer-support",
-      },
-      {
-        label: "Troubleshooting",
-        href: "https://docs.pancakeswap.finance/help/troubleshooting",
-      },
-      {
-        label: "Guides",
-        href: "https://docs.pancakeswap.finance/get-started",
+        label: "",
+        href: "https://rxqueen.neocities.org/ac/newhorizons",
       },
     ],
   },
@@ -54,23 +26,7 @@ export const footerLinks: FooterLinkType[] = [
     items: [
       {
         label: "Github",
-        href: "https://github.com/pancakeswap",
-      },
-      {
-        label: "Documentation",
-        href: "https://docs.pancakeswap.finance",
-      },
-      {
-        label: "Bug Bounty",
-        href: "https://app.gitbook.com/@pancakeswap-1/s/pancakeswap/code/bug-bounty",
-      },
-      {
-        label: "Audits",
-        href: "https://docs.pancakeswap.finance/help/faq#is-pancakeswap-safe-has-pancakeswap-been-audited",
-      },
-      {
-        label: "Careers",
-        href: "https://docs.pancakeswap.finance/hiring/become-a-chef",
+        href: "https://github.com/PepePalOfficial",
       },
     ],
   },
@@ -80,7 +36,7 @@ export const socials = [
   {
     label: "Twitter",
     icon: TwitterIcon,
-    href: "https://twitter.com/pancakeswap",
+    href: "https://twitter.com/PepePalOfficial",
   },
   {
     label: "Telegram",
@@ -88,94 +44,24 @@ export const socials = [
     items: [
       {
         label: "English",
-        href: "https://t.me/pancakeswap",
-      },
-      {
-        label: "Bahasa Indonesia",
-        href: "https://t.me/PepeDexIndonesia",
-      },
-      {
-        label: "中文",
-        href: "https://t.me/PepeDex_CN",
-      },
-      {
-        label: "Tiếng Việt",
-        href: "https://t.me/PepeDexVN",
-      },
-      {
-        label: "Italiano",
-        href: "https://t.me/pancakeswap_ita",
-      },
-      {
-        label: "русский",
-        href: "https://t.me/pancakeswap_ru",
-      },
-      {
-        label: "Türkiye",
-        href: "https://t.me/pancakeswapturkiye",
-      },
-      {
-        label: "Português",
-        href: "https://t.me/PepeDexPortuguese",
-      },
-      {
-        label: "Español",
-        href: "https://t.me/PancakeswapEs",
-      },
-      {
-        label: "日本語",
-        href: "https://t.me/pancakeswapjp",
-      },
-      {
-        label: "Français",
-        href: "https://t.me/pancakeswapfr",
-      },
-      {
-        label: "Deutsch",
-        href: "https://t.me/PepeDex_DE",
-      },
-      {
-        label: "Filipino",
-        href: "https://t.me/Pancakeswap_Ph",
-      },
-      {
-        label: "ქართული ენა",
-        href: "https://t.me/PepeDexGeorgia",
-      },
-      {
-        label: "हिन्दी",
-        href: "https://t.me/PepeDexINDIA",
-      },
-      {
-        label: "Announcements",
-        href: "https://t.me/PepeDexAnn",
+        href: "https://t.me/PepePalOfficial",
       },
     ],
   },
   {
     label: "Reddit",
     icon: RedditIcon,
-    href: "https://reddit.com/r/pancakeswap",
-  },
-  {
-    label: "Instagram",
-    icon: InstagramIcon,
-    href: "https://instagram.com/pancakeswap_official",
+    href: "https://reddit.com/r/PepePalOfficial",
   },
   {
     label: "Github",
     icon: GithubIcon,
-    href: "https://github.com/pancakeswap/",
+    href: "https://github.com/PepePalOfficial/",
   },
   {
     label: "Discord",
     icon: DiscordIcon,
-    href: "https://discord.gg/pancakeswap",
-  },
-  {
-    label: "Medium",
-    icon: MediumIcon,
-    href: "https://medium.com/pancakeswap",
+    href: "https://discord.gg/PepePalOfficial",
   },
 ];
 

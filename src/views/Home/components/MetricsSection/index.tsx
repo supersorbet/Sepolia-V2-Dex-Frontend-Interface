@@ -37,10 +37,10 @@ const Stats = () => {
     <Flex justifyContent="center" alignItems="center" flexDirection="column">
       <GradientLogo height="48px" width="48px" mb="24px" />
       <Heading textAlign="center" scale="xl">
-        {t('Used by millions.')}
+        {t('Built by Frens,')}
       </Heading>
       <Heading textAlign="center" scale="xl" mb="32px">
-        {t('Trusted with billions.')}
+        {t('For Frens.')}
       </Heading>
       <Text textAlign="center" color="textSubtle">
         {t('PepeDex er.')}
