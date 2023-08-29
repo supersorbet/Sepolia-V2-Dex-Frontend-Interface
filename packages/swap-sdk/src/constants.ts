@@ -102,7 +102,7 @@ export const WETH9 = {
   ),
   [ChainId.GOERLI_ARBI]: new Token(
     ChainId.GOERLI_ARBI,
-    '0xb9f4305c026A63De86DD18cBbBf5baC168a68EE9',
+    '0x4200000000000000000000000000000000000006',
     18,
     'WETH',
     'Wrapped Ether',
