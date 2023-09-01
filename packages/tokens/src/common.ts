@@ -24,7 +24,7 @@ export const CAKE_GOERLI_ARBI = new Token(
   18,
   'COPE',
   'PepeDex Token',
-  'https://pancakeswap.finance/',
+  '',
 )
 
 export const USDC_BSC = new Token(

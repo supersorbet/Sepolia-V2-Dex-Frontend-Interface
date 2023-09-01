@@ -65,12 +65,12 @@ export const CUSTOM_BASES: { [chainId in ChainId]?: { [tokenAddress: string]: To
 
 // used for display in the default list when adding liquidity
 export const SUGGESTED_BASES: ChainTokenList = {
-  [ChainId.ETHEREUM]: [USDC[ChainId.ETHEREUM], WBNB[ChainId.ETHEREUM], BUSD[ChainId.ETHEREUM], USDT[ChainId.ETHEREUM]],
+  [ChainId.ETHEREUM]: [USDC[ChainId.ETHEREUM], WNATIVE[ChainId.ETHEREUM], BUSD[ChainId.ETHEREUM], USDT[ChainId.ETHEREUM]],
   [ChainId.RINKEBY]: [USDC[ChainId.RINKEBY], WNATIVE[ChainId.RINKEBY], BUSD[ChainId.RINKEBY]],
   [ChainId.GOERLI]: [USDC[ChainId.GOERLI], WNATIVE[ChainId.GOERLI], BUSD[ChainId.GOERLI]],
   [ChainId.BSC]: [bscTokens.busd, bscTokens.cake, bscTokens.btcb],
   [ChainId.BSC_TESTNET]: [bscTestnetTokens.wbnb, bscTestnetTokens.cake, bscTestnetTokens.busd],
-  [ChainId.GOERLI_ARBI]: [BUSD[ChainId.GOERLI_ARBI], USDT[ChainId.GOERLI_ARBI], USDC[ChainId.GOERLI_ARBI], CAKE[ChainId.GOERLI_ARBI]],
+  [ChainId.GOERLI_ARBI]: [USDC[ChainId.GOERLI_ARBI], USDT[ChainId.GOERLI_ARBI], WNATIVE[ChainId.GOERLI_ARBI], CAKE[ChainId.GOERLI_ARBI]],
 }
 
 // used to construct the list of all pairs we consider by default in the frontend
@@ -80,7 +80,7 @@ export const BASES_TO_TRACK_LIQUIDITY_FOR: ChainTokenList = {
     WNATIVE[ChainId.ETHEREUM],
     BUSD[ChainId.ETHEREUM],
     USDT[ChainId.ETHEREUM],
-    WBNB[ChainId.ETHEREUM],
+    WETH9[ChainId.ETHEREUM],
   ],
   [ChainId.RINKEBY]: [USDC[ChainId.RINKEBY], WNATIVE[ChainId.RINKEBY], BUSD[ChainId.RINKEBY]],
   [ChainId.GOERLI]: [USDC[ChainId.GOERLI], WNATIVE[ChainId.GOERLI], BUSD[ChainId.GOERLI]],
@@ -92,10 +92,10 @@ export const BASES_TO_TRACK_LIQUIDITY_FOR: ChainTokenList = {
 export const PINNED_PAIRS: { readonly [chainId in ChainId]?: [Token, Token][] } = {
   [ChainId.ETHEREUM]: [
     [WNATIVE[ChainId.ETHEREUM], USDC[ChainId.ETHEREUM]],
-    [WBNB[ChainId.ETHEREUM], USDC[ChainId.ETHEREUM]],
-    [WBNB[ChainId.ETHEREUM], BUSD[ChainId.ETHEREUM]],
-    [WBNB[ChainId.ETHEREUM], USDT[ChainId.ETHEREUM]],
-    [WBNB[ChainId.ETHEREUM], WNATIVE[ChainId.ETHEREUM]],
+    [WETH9[ChainId.ETHEREUM], USDC[ChainId.ETHEREUM]],
+    [WETH9[ChainId.ETHEREUM], BUSD[ChainId.ETHEREUM]],
+    [WETH9[ChainId.ETHEREUM], USDT[ChainId.ETHEREUM]],
+    [WETH9[ChainId.ETHEREUM], WNATIVE[ChainId.ETHEREUM]],
   ],
   [ChainId.BSC]: [
     [bscTokens.cake, bscTokens.wbnb],
