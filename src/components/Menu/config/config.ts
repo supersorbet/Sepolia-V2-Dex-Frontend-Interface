@@ -160,7 +160,7 @@ const config: (
           href: '/info',
           supportChainIds: SUPPORT_ONLY_BSC,
         },
-        {
+      /*  {
           label: t('IFO'),
           href: '/ifo',
           supportChainIds: SUPPORT_ONLY_BSC,
@@ -171,7 +171,7 @@ const config: (
           href: '/voting',
           supportChainIds: SUPPORT_ONLY_BSC,
           image: '/images/voting/voting-bunny.png',
-        },
+        }, */
         {
           type: DropdownMenuItemType.DIVIDER,
         },

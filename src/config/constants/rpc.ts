@@ -11,7 +11,7 @@ export const BSC_TESTNET_RPC_URLS = [
 ]
 
 export const GOERLI_ARBI_RPC_URLS = [
-  'https://goerli-rollup.arbitrum.io/rpc',
-  'https://goerli-rollup.arbitrum.io/rpc',
-  'https://goerli-rollup.arbitrum.io/rpc',
+  'https://base-mainnet.public.blastapi.io',
+  'https://base-mainnet.public.blastapi.io',
+  'https://base-mainnet.public.blastapi.io',
 ]
