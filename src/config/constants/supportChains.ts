@@ -2,8 +2,8 @@ import { ChainId } from '@pancakeswap/sdk'
 
 export const SUPPORT_ONLY_BSC = [
   ChainId.GOERLI_ARBI,
-  ChainId.BSC,
-  ChainId.BSC_TESTNET,
+ // ChainId.BSC,
+ // ChainId.BSC_TESTNET,
   ChainId.ETHEREUM,
   ChainId.GOERLI,
 ]
