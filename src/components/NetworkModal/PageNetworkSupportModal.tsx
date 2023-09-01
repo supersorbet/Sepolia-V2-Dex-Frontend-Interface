@@ -49,16 +49,16 @@ export function PageNetworkSupportModal() {
         )}
         <Text small>
           {t(
-            'Our Pools, Limit, Trading Competition, Prediction, Lottery and NFTs features are currently available only on BNB Chain! Come over and join the community in the fun!',
+            'hi',
           )}
         </Text>
         {canSwitch && (
           <Button
             variant={foundChain && lastValidPath ? 'secondary' : 'primary'}
             isLoading={isLoading}
-            onClick={() => switchNetworkAsync(ChainId.BSC)}
+            onClick={() => switchNetworkAsync(ChainId.GOERLI_ARBI)} // ChainId.BSC
           >
-            {t('Switch to %chain%', { chain: 'BNB Smart Chain' })}
+            {t('Switch to %chain%', { chain: 'Base' })}
           </Button>
         )}
         {isConnected && (

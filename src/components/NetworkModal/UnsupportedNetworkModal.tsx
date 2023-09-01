@@ -44,7 +44,7 @@ export function UnsupportedNetworkModal() {
             layout="fixed"
             width="194px"
             height="175px"
-            src="/images/check-your-network.png"
+            src="/images/check-your-network.jpg"
             alt="check your network"
           />
         </div>

@@ -71,7 +71,7 @@ const bscExplorer = { name: 'BscScan', url: 'https://bscscan.com' }
 
 export const bsc: Chain = {
   id: 56,
-  name: 'BNB Smart Chain',
+  name: 'Base Testnet',
   network: 'bsc',
   rpcUrls: {
     public: 'https://bsc-dataseed1.binance.org',
