@@ -129,7 +129,7 @@ const Hero = () => {
             {t('The Frenliest DEX in DeFi.')}
           </Heading>
           <Heading scale="md" mb="24px">
-            {t('Trade, earn, and win crypto on the most popular decentralized platform in the galaxy.')}
+            {t('Trade, earn, and win crypto on the frenliest decentralized platform in this ClownWorld!')}
           </Heading>
           <Flex>
             {!account && <ConnectWalletButton mr="8px" />}

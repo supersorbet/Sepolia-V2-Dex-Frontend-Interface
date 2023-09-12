@@ -66,7 +66,7 @@ const Home: React.FC<React.PropsWithChildren> = () => {
           background: linear-gradient(180deg, #ffffff 22%, #d7caec 100%);
         }
         [data-theme='dark'] #home-2 .page-bg {
-          background: linear-gradient(180deg, #09070c 22%, #201335 100%);
+          background: linear-gradient(180deg, #00070c 22%, #201335 100%);
         }
         #home-3 .page-bg {
           background: linear-gradient(180deg, #6fb6f1 0%, #eaf2f6 100%);

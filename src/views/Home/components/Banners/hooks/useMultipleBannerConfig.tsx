@@ -2,8 +2,8 @@ import { ReactElement, useMemo } from 'react'
 import shuffle from 'lodash/shuffle'
 import CompetitionBanner from '../CompetitionBanner'
 import IFOBanner from '../IFOBanner'
-import LotteryBanner from '../LotteryBanner'
-import PerpetualBanner from '../PerpetualBanner'
+// import LotteryBanner from '../LotteryBanner'
+//import PerpetualBanner from '../PerpetualBanner'
 import useIsRenderIfoBanner from './useIsRenderIFOBanner'
 import useIsRenderLotteryBanner from './useIsRenderLotteryBanner'
 import useIsRenderCompetitionBanner from './useIsRenderCompetitionBanner'
@@ -32,10 +32,10 @@ export const useMultipleBannerConfig = () => {
 
   return useMemo(() => {
     const NO_SHUFFLE_BANNERS: IBannerConfig[] = [
-      {
-        shouldRender: isRenderIFOBanner,
-        banner: <IFOBanner />,
-      },
+    //  {
+    //    shouldRender: isRenderIFOBanner,
+    //    banner: <IFOBanner />,
+    //  },
     ]
 
     const SHUFFLE_BANNERS: IBannerConfig[] = [
@@ -43,14 +43,14 @@ export const useMultipleBannerConfig = () => {
         shouldRender: isRenderCompetitionBanner,
         banner: <CompetitionBanner />,
       },
-      {
-        shouldRender: isRenderLotteryBanner,
-        banner: <LotteryBanner />,
-      },
-      {
-        shouldRender: true,
-        banner: <PerpetualBanner />,
-      },
+     // {
+     //   shouldRender: isRenderLotteryBanner,
+     //   banner: <LotteryBanner />,
+     // },
+     // {
+     //   shouldRender: true,
+     //   banner: <PerpetualBanner />,
+     // },
     ]
     return [...NO_SHUFFLE_BANNERS, ...shuffle(SHUFFLE_BANNERS)]
       .filter((bannerConfig: IBannerConfig) => bannerConfig.shouldRender)

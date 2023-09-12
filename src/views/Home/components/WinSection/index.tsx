@@ -10,14 +10,14 @@ import CompositeImage from '../CompositeImage'
 
 const TransparentFrame = styled.div<{ isDark: boolean }>`
   background: ${({ theme }) => (theme.isDark ? 'rgba(8, 6, 11, 0.6)' : ' rgba(255, 255, 255, 0.6)')};
-  padding: 16px;
-  border: 1px solid ${({ theme }) => theme.colors.cardBorder};
+  padding: 0px;
+  border: 0px solid ${({ theme }) => theme.colors.cardBorder};
   box-sizing: border-box;
-  backdrop-filter: blur(12px);
-  border-radius: 72px;
+  backdrop-filter: blur(0px);
+  border-radius: 0px;
 
   ${({ theme }) => theme.mediaQueries.md} {
-    padding: 40px;
+    padding: 0px;
   }
 `
 
@@ -55,7 +55,7 @@ const TopRightImgWrapper = styled(Flex)`
 `
 
 const PredictionCardData: IconCardData = {
-  icon: <PredictionsIcon width="36px" color="inverseContrast" />,
+  icon: <PredictionsIcon width="0px" color="inverseContrast" />,
   background: 'linear-gradient(180deg, #ffb237 0%, #ffcd51 51.17%, #ffe76a 100%);',
   borderColor: '#ffb237',
   rotation: '-2.36deg',
