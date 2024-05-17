@@ -116,9 +116,9 @@ export const bscTest: Chain = {
 }
 
 export const arbitrumGoerli: Chain = {
-  id: 8453,
-  name: 'Base',
-  network: 'BASE',
+  id: 11155111,
+  name: 'Sepolia',
+  network: 'Sepolia',
   nativeCurrency: {
     decimals: 18,
     name: 'Ether Token',

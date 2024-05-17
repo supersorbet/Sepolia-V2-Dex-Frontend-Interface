@@ -19,7 +19,7 @@ const chains = [
   [5, farm5, lpHelpers5],
   [56, farm56, lpHelpers56],
   [97, farm97, lpHelpers97],
-  [8453, farm421613, lpHelpers421613],
+  [11155111, farm421613, lpHelpers421613],
 ]
 
 export const saveList = async () => {

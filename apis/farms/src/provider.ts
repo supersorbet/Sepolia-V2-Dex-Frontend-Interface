@@ -26,8 +26,8 @@ export const goerliProvider = new StaticJsonRpcProvider(
 
 export const goerliArbiProvider = new StaticJsonRpcProvider(
   {
-    url: 'https://base-mainnet.public.blastapi.io	',
+    url: 'https://ethereum-sepolia-rpc.publicnode.com	',
     skipFetchSetup: true,
   },
-  8453,
+  11155111,
 )
