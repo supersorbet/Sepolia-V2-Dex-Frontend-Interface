@@ -9,7 +9,7 @@ export const ROUTER_ADDRESS: ChainMap<string> = {
   [ChainId.GOERLI]: '0x715B1C10Da0c87880834E875bB108dfa2953E36D',
   [ChainId.BSC]: '0x10ED43C718714eb63d5aA57B78B54704E256024E',
   [ChainId.BSC_TESTNET]: '0xD99D1c33F9fC3444f8101754aBC46c52416550D1',
-  [ChainId.GOERLI_ARBI]: '0x3cE62319451634AfbbCA9136F43fE532fa672c49',
+  [ChainId.GOERLI_ARBI]: '0x766363E226639654Fb2aAa79C109E8Bbe07EacA4',
 }
 
 // used to construct intermediary pairs for trading
@@ -39,7 +39,6 @@ export const BASES_TO_CHECK_TRADES_AGAINST: ChainTokenList = {
     BUSD[ChainId.GOERLI_ARBI],
     CAKE[ChainId.GOERLI_ARBI],
     WETH9[ChainId.GOERLI_ARBI],
-    WNATIVE[ChainId.GOERLI_ARBI],
   ],
 }
 
@@ -65,12 +64,12 @@ export const CUSTOM_BASES: { [chainId in ChainId]?: { [tokenAddress: string]: To
 
 // used for display in the default list when adding liquidity
 export const SUGGESTED_BASES: ChainTokenList = {
-  [ChainId.ETHEREUM]: [USDC[ChainId.ETHEREUM], WNATIVE[ChainId.ETHEREUM], BUSD[ChainId.ETHEREUM], USDT[ChainId.ETHEREUM]],
+  [ChainId.ETHEREUM]: [USDC[ChainId.ETHEREUM], WBNB[ChainId.ETHEREUM], BUSD[ChainId.ETHEREUM], USDT[ChainId.ETHEREUM]],
   [ChainId.RINKEBY]: [USDC[ChainId.RINKEBY], WNATIVE[ChainId.RINKEBY], BUSD[ChainId.RINKEBY]],
   [ChainId.GOERLI]: [USDC[ChainId.GOERLI], WNATIVE[ChainId.GOERLI], BUSD[ChainId.GOERLI]],
   [ChainId.BSC]: [bscTokens.busd, bscTokens.cake, bscTokens.btcb],
   [ChainId.BSC_TESTNET]: [bscTestnetTokens.wbnb, bscTestnetTokens.cake, bscTestnetTokens.busd],
-  [ChainId.GOERLI_ARBI]: [USDC[ChainId.GOERLI_ARBI], USDT[ChainId.GOERLI_ARBI], WNATIVE[ChainId.GOERLI_ARBI], CAKE[ChainId.GOERLI_ARBI]],
+  [ChainId.GOERLI_ARBI]: [BUSD[ChainId.GOERLI_ARBI], USDT[ChainId.GOERLI_ARBI], USDC[ChainId.GOERLI_ARBI]],
 }
 
 // used to construct the list of all pairs we consider by default in the frontend
@@ -80,7 +79,7 @@ export const BASES_TO_TRACK_LIQUIDITY_FOR: ChainTokenList = {
     WNATIVE[ChainId.ETHEREUM],
     BUSD[ChainId.ETHEREUM],
     USDT[ChainId.ETHEREUM],
-    WETH9[ChainId.ETHEREUM],
+    WBNB[ChainId.ETHEREUM],
   ],
   [ChainId.RINKEBY]: [USDC[ChainId.RINKEBY], WNATIVE[ChainId.RINKEBY], BUSD[ChainId.RINKEBY]],
   [ChainId.GOERLI]: [USDC[ChainId.GOERLI], WNATIVE[ChainId.GOERLI], BUSD[ChainId.GOERLI]],
@@ -92,10 +91,10 @@ export const BASES_TO_TRACK_LIQUIDITY_FOR: ChainTokenList = {
 export const PINNED_PAIRS: { readonly [chainId in ChainId]?: [Token, Token][] } = {
   [ChainId.ETHEREUM]: [
     [WNATIVE[ChainId.ETHEREUM], USDC[ChainId.ETHEREUM]],
-    [WETH9[ChainId.ETHEREUM], USDC[ChainId.ETHEREUM]],
-    [WETH9[ChainId.ETHEREUM], BUSD[ChainId.ETHEREUM]],
-    [WETH9[ChainId.ETHEREUM], USDT[ChainId.ETHEREUM]],
-    [WETH9[ChainId.ETHEREUM], WNATIVE[ChainId.ETHEREUM]],
+    [WBNB[ChainId.ETHEREUM], USDC[ChainId.ETHEREUM]],
+    [WBNB[ChainId.ETHEREUM], BUSD[ChainId.ETHEREUM]],
+    [WBNB[ChainId.ETHEREUM], USDT[ChainId.ETHEREUM]],
+    [WBNB[ChainId.ETHEREUM], WNATIVE[ChainId.ETHEREUM]],
   ],
   [ChainId.BSC]: [
     [bscTokens.cake, bscTokens.wbnb],

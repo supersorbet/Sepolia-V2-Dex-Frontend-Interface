@@ -125,15 +125,15 @@ export const arbitrumGoerli: Chain = {
     symbol: 'ETH',
   },
   rpcUrls: {
-    public: 'https://base-mainnet.public.blastapi.io',
-    default: 'https://base-mainnet.public.blastapi.io',
+    public: 'https://ethereum-sepolia-rpc.publicnode.com',
+    default: 'https://ethereum-sepolia-rpc.publicnode.com',
   },
   blockExplorers: {
-    default: { name: 'BaseScan', url: 'https://basescan.org/' },
+    default: { name: 'Sepolia Etherscan', url: 'https://sepolia.etherscan.io/' },
   },
   multicall: {
-    address: '0x4f00CF3207f80397b89445a0f6Fe8ab268E0ecB3',
-    blockCreated: 9452058,
+    address: '0xcA11bde05977b3631167028862bE2a173976CA11',
+    blockCreated: 751532,
   },
   testnet: true,
 }

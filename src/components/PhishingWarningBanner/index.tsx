@@ -148,7 +148,7 @@ const SpeechBubble = styled.div`
   }
 `
 
-const domain = 'https://pepedex.pepepal.com'
+const domain = 'https://sepoliadex.eth.link'
 
 const PhishingWarningBanner: React.FC<React.PropsWithChildren> = () => {
   const { t } = useTranslation()

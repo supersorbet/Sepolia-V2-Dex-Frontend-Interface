@@ -76,8 +76,8 @@ function MyApp(props: AppProps<{ initialReduxState: any }>) {
           content="st."
         />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="🐸 PepeDex V2 - The Frenliest DEX in DeFi." />
-        <title>PepeDex V2</title>
+        <meta name="twitter:title" content="🐸 Sepolia V2 - The Frenliest DEX in DeFi." />
+        <title>Sepolia V2 Interface</title>
         {(Component as NextPageWithLayout).mp && (
           // eslint-disable-next-line @next/next/no-sync-scripts
           <script src="https://public.bnbstatic.com/static/js/mp-webview-sdk/webview-v1.0.0.min.js" id="mp-webview" />

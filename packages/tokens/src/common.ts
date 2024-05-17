@@ -5,7 +5,7 @@ export const CAKE_MAINNET = new Token(
   '0x0E09FaBB73Bd3Ade0a17ECC321fD13a19e81cE82',
   18,
   'CAKE',
-  'PepeDex Token',
+  'PancakeSwap Token',
   'https://pancakeswap.finance/',
 )
 
@@ -14,17 +14,17 @@ export const CAKE_TESTNET = new Token(
   '0xFa60D973F7642B748046464e165A65B7323b0DEE',
   18,
   'CAKE',
-  'PepeDex Token',
+  'PancakeSwap Token',
   'https://pancakeswap.finance/',
 )
 
 export const CAKE_GOERLI_ARBI = new Token(
   ChainId.GOERLI_ARBI,
-  '0x78a087d713Be963Bf307b18F2Ff8122EF9A63ae9',
+  '0x3828f9eDD4A7F93BCEB61e26f3FF8bEd5213ABD8',
   18,
-  'COPE',
-  'PepeDex Token',
-  '',
+  'CAKE',
+  'PancakeSwap Token',
+  'https://pancakeswap.finance/',
 )
 
 export const USDC_BSC = new Token(
@@ -65,10 +65,10 @@ export const USDC_GOERLI = new Token(
 
 export const USDC_GOERLI_ARBI = new Token(
   ChainId.GOERLI_ARBI,
-  '0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA',
+  '0x206Fd4f2d9bA776BE7531fE654a08bBB36b4b5F1',
   6,
-  'USDbC',
-  'Base USD Coin',
+  'USDC',
+  'USD Coin',
 )
 
 export const USDT_BSC = new Token(
@@ -91,11 +91,11 @@ export const USDT_ETH = new Token(
 
 export const USDT_GOERLI_ARBI = new Token(
   ChainId.GOERLI_ARBI,
-  '0x50c5725949A6F0c72E6C4a641F24049A917DB0Cb',
-  18,
-  'DAI',
-  'DAI Stablecoin',
-  'https://makerdao.com/',
+  '0x7db5fA1170D15e8D02deFB483b833EB1f3bAAC38',
+  6,
+  'USDT',
+  'Tether USD',
+  'https://tether.to/',
 )
 
 export const BUSD_BSC = new Token(
@@ -145,28 +145,28 @@ export const BUSD_GOERLI = new Token(
 
 export const BUSD_GOERLI_ARBI = new Token(
   ChainId.GOERLI_ARBI,
-  '0xEB466342C4d449BC9f53A865D5Cb90586f405215',
-  6,
-  'axlUSDC',
-  'Axelar Wrapped USDC',
-  'https://app.squidrouter.com',
+  '0xA7a151d60Bbd522d3611C2dB3F1F972Ee9904B3e',
+  18,
+  'USDC',
+  'sepolia USDC',
+  'https://www.paxos.com/busd/',
 )
 
 export const SWAPP_GOERLI_ARBI = new Token(
   ChainId.GOERLI_ARBI,
-  '0x7054D3cdAB1a693e1F6bFc29Dce33FE222ea6164',
+  '0x3828f9eDD4A7F93BCEB61e26f3FF8bEd5213ABD8',
   18,
-  'COPE',
-  'CopeV2',
-  'https://www.pngkit.com/png/detail/103-1034137_nekojiru-tumblr-nekojiru-sou.png',
+  'pep',
+  'pep',
+  '',
 )
 export const CAKE_ETH = new Token(
   ChainId.ETHEREUM,
   '0x480C1DCcFF89b1b6E663c4b22B06e1d610e885a1',
   18,
-  'COPE',
-  'Copium',
-  'https://pepepal.com/',
+  'pep',
+  'pepecoin',
+  'https://pepecoin.io/',
 )
 export const BUSD: Record<ChainId, Token> = {
   [ChainId.ETHEREUM]: BUSD_ETH,
