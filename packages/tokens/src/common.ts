@@ -20,7 +20,7 @@ export const CAKE_TESTNET = new Token(
 
 export const CAKE_GOERLI_ARBI = new Token(
   ChainId.GOERLI_ARBI,
-  '0x33d6f54e0C252623bc7541FE80860a88a1e4C40b',
+  '0x3828f9eDD4A7F93BCEB61e26f3FF8bEd5213ABD8',
   18,
   'CAKE',
   'PancakeSwap Token',
@@ -91,7 +91,7 @@ export const USDT_ETH = new Token(
 
 export const USDT_GOERLI_ARBI = new Token(
   ChainId.GOERLI_ARBI,
-  '0xD5Fe27B151c0E10696fF31d56db4Dfd91ed487a1',
+  '0x7db5fA1170D15e8D02deFB483b833EB1f3bAAC38',
   6,
   'USDT',
   'Tether USD',
@@ -145,28 +145,28 @@ export const BUSD_GOERLI = new Token(
 
 export const BUSD_GOERLI_ARBI = new Token(
   ChainId.GOERLI_ARBI,
-  '0x3B1Fdb2f0B835bdEdADE95EC8949CfbBcf8D85cf',
+  '0xA7a151d60Bbd522d3611C2dB3F1F972Ee9904B3e',
   18,
-  'BUSD',
-  'Binance USD',
+  'USDC',
+  'sepolia USDC',
   'https://www.paxos.com/busd/',
 )
 
 export const SWAPP_GOERLI_ARBI = new Token(
   ChainId.GOERLI_ARBI,
-  '0x5cC486465A229308b1BD0b0F867B88a45B0c64DD',
+  '0x3828f9eDD4A7F93BCEB61e26f3FF8bEd5213ABD8',
   18,
-  'SWAPP',
-  'SWAPP',
+  'pep',
+  'pep',
   '',
 )
 export const CAKE_ETH = new Token(
   ChainId.ETHEREUM,
   '0x480C1DCcFF89b1b6E663c4b22B06e1d610e885a1',
   18,
-  'COPE',
-  'Copium',
-  'https://pepepal.com/',
+  'pep',
+  'pepecoin',
+  'https://pepecoin.io/',
 )
 export const BUSD: Record<ChainId, Token> = {
   [ChainId.ETHEREUM]: BUSD_ETH,

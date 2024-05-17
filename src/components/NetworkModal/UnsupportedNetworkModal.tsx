@@ -16,7 +16,7 @@ import Dots from '../Loader/Dots'
 export function UnsupportedNetworkModal() {
   const { switchNetworkAsync, isLoading, canSwitch } = useSwitchNetwork()
   const { chains } = useNetwork()
-  const chainId = useLocalNetworkChain() || ChainId.BSC
+  const chainId = useLocalNetworkChain() || ChainId.GOERLI_ARBI
   const { isConnected } = useAccount()
   const { logout } = useAuth()
   const { t } = useTranslation()
@@ -44,7 +44,7 @@ export function UnsupportedNetworkModal() {
             layout="fixed"
             width="194px"
             height="175px"
-            src="/images/check-your-network.png"
+            src="/images/check-your-network.jpg"
             alt="check your network"
           />
         </div>
@@ -56,9 +56,9 @@ export function UnsupportedNetworkModal() {
             isLoading={isLoading}
             onClick={() => {
               if (supportedMainnetChains.map((c) => c.id).includes(chainId)) {
-                switchNetworkAsync(421613)
+                switchNetworkAsync(8453)
               } else {
-                switchNetworkAsync(421613)
+                switchNetworkAsync(8453)
               }
             }}
           >

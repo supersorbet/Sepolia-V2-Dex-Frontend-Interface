@@ -10,7 +10,7 @@ export enum ChainId {
   GOERLI = 5,
   BSC = 56,
   BSC_TESTNET = 97,
-  GOERLI_ARBI = 421613,
+  GOERLI_ARBI = 11155111,
 }
 
 export enum TradeType {
@@ -28,7 +28,7 @@ export const FACTORY_ADDRESS = '0xcA143Ce32Fe78f1f7019d7d551a6402fC5350c73'
 
 // // TODO: ETH This is test version, do not depends on it
 const FACTORY_ADDRESS_ETH = '0x460b2005b3318982feADA99f7ebF13e1D6f6eFfE'
-export const FACTORY_ADDRESS_GOERLI_ARBI = '0xeB660A58B4C668bD8d0b92c28f79353b5bC77C25'
+export const FACTORY_ADDRESS_GOERLI_ARBI = '0x765CAc856515735B859e3FaafA6aEf13b20c05d2'
 
 export const FACTORY_ADDRESS_MAP: Record<number, string> = {
   [ChainId.ETHEREUM]: FACTORY_ADDRESS_ETH,
@@ -47,7 +47,7 @@ export const INIT_CODE_HASH_MAP: Record<number, string> = {
   [ChainId.GOERLI]: INIT_CODE_HASH_ETH,
   [ChainId.BSC]: INIT_CODE_HASH,
   [ChainId.BSC_TESTNET]: '0xd0d4c4cd0848c93cb4fd1f498d7013ee6bfb25783ea21593d5834f5d250ece66',
-  [ChainId.GOERLI_ARBI]: '0x37b3685b75f1b4fe595cced642748ef9c6d2f089023d502003e1fd8bb9077292',
+  [ChainId.GOERLI_ARBI]: '0x6b53bdef3fffc6ffe4b71e62cf09d840ebd00c05b640cb965752ecd3515d027e',
 }
 
 export const MINIMUM_LIQUIDITY = JSBI.BigInt(1000)
@@ -102,10 +102,10 @@ export const WETH9 = {
   ),
   [ChainId.GOERLI_ARBI]: new Token(
     ChainId.GOERLI_ARBI,
-    '0xD495CE3454eF4C4AF0b52190B02cf0Af209A5656',
+    '0xfFf9976782d46CC05630D1f6eBAb18b2324d6B14',
     18,
     'WETH',
-    'Wrapped Ether',
+    'Sepolia Wrapped Ether',
     'https://weth.io'
   ),
 }

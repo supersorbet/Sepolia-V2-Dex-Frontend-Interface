@@ -52,7 +52,7 @@ const SkeletonWrapper = styled.div<SkeletonProps>`
 `;
 
 const Root = styled.div<SkeletonProps>`
-  min-height: 20px;
+  min-height: 25px;
   display: block;
   background-color: ${({ theme }) => theme.colors.backgroundDisabled};
   border-radius: ${({ variant, theme }) => (variant === VARIANT.CIRCLE ? theme.radii.circle : theme.radii.small)};

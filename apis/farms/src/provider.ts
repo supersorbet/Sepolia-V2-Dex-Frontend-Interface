@@ -26,8 +26,8 @@ export const goerliProvider = new StaticJsonRpcProvider(
 
 export const goerliArbiProvider = new StaticJsonRpcProvider(
   {
-    url: 'https://goerli-rollup.arbitrum.io/rpc',
+    url: 'https://ethereum-sepolia-rpc.publicnode.com	',
     skipFetchSetup: true,
   },
-  421613,
+  11155111,
 )

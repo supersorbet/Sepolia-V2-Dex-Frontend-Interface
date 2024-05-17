@@ -5,7 +5,7 @@ export const goerliArbiTestnetTokens = {
   weth: WETH9[ChainId.GOERLI_ARBI],
   syrup: new Token(
     ChainId.GOERLI_ARBI,
-    '0x7a902a993be6e62690cD5E9923d6efF87Bf78f58',
+    '0xfFf9976782d46CC05630D1f6eBAb18b2324d6B14',
     18,
     'SYRUP',
     'SyrupBar Token',

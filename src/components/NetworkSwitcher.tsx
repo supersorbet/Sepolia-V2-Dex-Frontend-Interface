@@ -127,8 +127,8 @@ export const NetworkSwitcher = () => {
         mr="8px"
         variant={isLoading ? 'pending' : isWrongNetwork ? 'danger' : 'default'}
         avatarSrc={
-          chainId === 421613
-            ? 'https://cdn.o3.network/token-profile/arbitrum/0x0000000000000000000000000000000000000000/logo.png'
+          chainId === 8453
+            ? 'https://bridge.base.org/icons/base.svg'
             : `/images/chains/${chainId}.png`
         }
         disabled={cannotChangeNetwork}

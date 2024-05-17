@@ -71,7 +71,7 @@ const bscExplorer = { name: 'BscScan', url: 'https://bscscan.com' }
 
 export const bsc: Chain = {
   id: 56,
-  name: 'BNB Smart Chain',
+  name: 'Base Testnet',
   network: 'bsc',
   rpcUrls: {
     public: 'https://bsc-dataseed1.binance.org',
@@ -116,24 +116,24 @@ export const bscTest: Chain = {
 }
 
 export const arbitrumGoerli: Chain = {
-  id: 421613,
-  name: 'Arbitrum Goerli Testnet',
-  network: 'arbitrumGoerli-testnet',
+  id: 11155111,
+  name: 'Sepolia',
+  network: 'Sepolia',
   nativeCurrency: {
     decimals: 18,
     name: 'Ether Token',
     symbol: 'ETH',
   },
   rpcUrls: {
-    public: 'https://goerli-rollup.arbitrum.io/rpc',
-    default: 'https://goerli-rollup.arbitrum.io/rpc',
+    public: 'https://ethereum-sepolia-rpc.publicnode.com',
+    default: 'https://ethereum-sepolia-rpc.publicnode.com',
   },
   blockExplorers: {
-    default: { name: 'ArbiCcan', url: 'https://goerli.arbiscan.io' },
+    default: { name: 'Sepolia Etherscan', url: 'https://sepolia.etherscan.io/' },
   },
   multicall: {
-    address: '0x4f00CF3207f80397b89445a0f6Fe8ab268E0ecB3',
-    blockCreated: 9452058,
+    address: '0xcA11bde05977b3631167028862bE2a173976CA11',
+    blockCreated: 751532,
   },
   testnet: true,
 }

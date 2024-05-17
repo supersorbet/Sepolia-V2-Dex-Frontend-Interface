@@ -105,7 +105,7 @@ const Banner: React.FC<React.PropsWithChildren<BannerProps>> = ({ handleScroll }
               bold
               defaultType
             >
-              {t('The PancakeSwap')}
+              {t('The PepeDex')}
             </OutlineText>
             <OutlineText fontSize={['24px', '24px', '24px', '24px', '32px']} bold ml="4px">
               {t('Pottery')}

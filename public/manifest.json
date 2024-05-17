@@ -1,8 +1,8 @@
 {
-  "short_name": "PancakeSwap",
-  "name": "PancakeSwap",
-  "description": "Farm CAKE with Pancake LP Tokens",
-  "homepage_url": "https://pancakeswap.finance",
+  "short_name": "PepeDex",
+  "name": "PepeDex",
+  "description": "Farm COPE with PepeDex LP Tokens",
+  "homepage_url": "https://rxqueen.neocities.org/ac/newhorizons",
   "start_url": ".",
   "display": "standalone",
   "theme_color": "#1FC7D4",

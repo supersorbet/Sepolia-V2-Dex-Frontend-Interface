@@ -353,7 +353,7 @@ const HowToPlay: React.FC<React.PropsWithChildren> = () => {
           <Text>
             {t('Check our in-depth guide on')}{' '}
             <InlineLink href="https://docs.pancakeswap.finance/products/lottery/lottery-guide">
-              {t('how to play the PancakeSwap lottery!')}
+              {t('how to play the PepeDex lottery!')}
             </InlineLink>
           </Text>
         </Flex>

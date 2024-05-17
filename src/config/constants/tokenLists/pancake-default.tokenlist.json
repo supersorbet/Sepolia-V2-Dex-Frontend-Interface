@@ -148,11 +148,11 @@
     },
     {
       "name": "Wrapped Ether",
-      "address": "0xc778417E063141139Fce010982780140Aa0cD5Ab",
+      "address": "0x4200000000000000000000000000000000000006",
       "symbol": "WETH",
       "decimals": 18,
-      "chainId": 4,
-      "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xc778417E063141139Fce010982780140Aa0cD5Ab/logo.png"
+      "chainId": 8453,
+      "logoURI": "https://app.alienbase.xyz/images/tokens/0x4200000000000000000000000000000000000006.png"
     },
     {
       "name": "Wrapped Ether",
@@ -179,12 +179,12 @@
       "logoURI": "https://pancakeswap.finance/images/tokens/0x8AC76a51cc950d9822D68b83fE1Ad97B32Cd580d.png"
     },
     {
-      "name": "Test USD Coin",
-      "address": "0x4DBCdF9B62e891a7cec5A2568C3F4FAF9E8Abe2b",
-      "symbol": "tUSDC",
+      "name": "Base USDC Coin",
+      "address": "0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA",
+      "symbol": "USDbC",
       "decimals": 6,
-      "chainId": 4,
-      "logoURI": "https://pancakeswap.finance/images/tokens/0x8AC76a51cc950d9822D68b83fE1Ad97B32Cd580d.png"
+      "chainId": 8453,
+      "logoURI": "https://basescan.org/token/images/usdbc_ofc_32.png"
     },
     {
       "name": "Test USD Coin",
@@ -213,26 +213,26 @@
     {
       "name": "Wrapped ETH",
       "symbol": "WETH",
-      "address": "0xD495CE3454eF4C4AF0b52190B02cf0Af209A5656",
+      "address": "0xb9f4305c026A63De86DD18cBbBf5baC168a68EE9",
       "chainId": 421613,
       "decimals": 18,
       "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2/logo.png"
     },
     {
-      "name": "BUSD Token",
-      "symbol": "BUSD",
-      "address": "0x3B1Fdb2f0B835bdEdADE95EC8949CfbBcf8D85cf",
-      "chainId": 421613,
-      "decimals": 18,
-      "logoURI": "https://pancakeswap.finance/images/tokens/0xe9e7CEA3DedcA5984780Bafc599bD69ADd087D56.png"
+      "name": "Axelar Wrapped USDC(busd)",
+      "symbol": "axlUSDC",
+      "address": "0xEB466342C4d449BC9f53A865D5Cb90586f405215",
+      "chainId": 8453,
+      "decimals": 6,
+      "logoURI": "https://tokens.pancakeswap.finance/images/0x4268B8F0B87b6Eae5d897996E6b845ddbD99Adf3.png"
     },
     {
-      "name": "Tether USD",
-      "symbol": "USDT",
-      "address": "0xD5Fe27B151c0E10696fF31d56db4Dfd91ed487a1",
-      "chainId": 421613,
-      "decimals": 6,
-      "logoURI": "https://pancakeswap.finance/images/tokens/0x55d398326f99059fF775485246999027B3197955.png"
+      "name": "DAI Stablecoin",
+      "symbol": "DAI",
+      "address": "0x50c5725949A6F0c72E6C4a641F24049A917DB0Cb",
+      "chainId": 8453,
+      "decimals": 18,
+      "logoURI": "https://basescan.org/token/images/daistablecoin_32.png"
     },
     {
       "name": "USD Coin",
@@ -251,11 +251,12 @@
       "logoURI": "https://pancakeswap.finance/images/tokens/0x0E09FaBB73Bd3Ade0a17ECC321fD13a19e81cE82.png"
     },
     {
-      "name": "SWAPP",
-      "symbol": "SWAPP",
-      "address": "0x5cC486465A229308b1BD0b0F867B88a45B0c64DD",
-      "chainId": 421613,
-      "decimals": 18
+      "name": "CopeV2",
+      "symbol": "COPE",
+      "address": "0x7054D3cdAB1a693e1F6bFc29Dce33FE222ea6164",
+      "chainId": 8453,
+      "decimals": 18,
+      "logoURI": "https://www.pngkit.com/png/detail/103-1034137_nekojiru-tumblr-nekojiru-sou.png"
     }
   ]
 }
