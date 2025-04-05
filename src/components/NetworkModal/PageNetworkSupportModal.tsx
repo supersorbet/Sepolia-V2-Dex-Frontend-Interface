@@ -56,9 +56,9 @@ export function PageNetworkSupportModal() {
           <Button
             variant={foundChain && lastValidPath ? 'secondary' : 'primary'}
             isLoading={isLoading}
-            onClick={() => switchNetworkAsync(ChainId.GOERLI_ARBI)} // ChainId.BSC
+            onClick={() => switchNetworkAsync(ChainId.BASED)}
           >
-            {t('Switch to %chain%', { chain: 'Base' })}
+            {t('Switch to %chain%', { chain: 'BASED' })}
           </Button>
         )}
         {isConnected && (

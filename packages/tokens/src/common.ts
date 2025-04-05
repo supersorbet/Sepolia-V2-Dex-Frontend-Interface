@@ -71,6 +71,15 @@ export const USDC_GOERLI_ARBI = new Token(
   'USD Coin',
 )
 
+export const USDC_BASED = new Token(
+  ChainId.BASED,
+  '0x7120e48E34166F96a422A39C18FB93A79c92B6B6',
+  6,
+  'USDC',
+  'USD Coin',
+  'https://www.centre.io/usdc',
+)
+
 export const USDT_BSC = new Token(
   ChainId.BSC,
   '0x55d398326f99059fF775485246999027B3197955',
@@ -93,6 +102,15 @@ export const USDT_GOERLI_ARBI = new Token(
   ChainId.GOERLI_ARBI,
   '0x7db5fA1170D15e8D02deFB483b833EB1f3bAAC38',
   6,
+  'USDT',
+  'Tether USD',
+  'https://tether.to/',
+)
+
+export const USDT_BASED = new Token(
+  ChainId.BASED,
+  '0x55d398326f99059fF775485246999027B3197955',
+  18,
   'USDT',
   'Tether USD',
   'https://tether.to/',
@@ -152,6 +170,15 @@ export const BUSD_GOERLI_ARBI = new Token(
   'https://www.paxos.com/busd/',
 )
 
+export const BUSD_BASED = new Token(
+  ChainId.BASED,
+  '0xe9e7CEA3DedcA5984780Bafc599bD69ADd087D56',
+  18,
+  'BUSD',
+  'Binance USD',
+  'https://www.paxos.com/busd/',
+)
+
 export const SWAPP_GOERLI_ARBI = new Token(
   ChainId.GOERLI_ARBI,
   '0x3828f9eDD4A7F93BCEB61e26f3FF8bEd5213ABD8',
@@ -160,6 +187,7 @@ export const SWAPP_GOERLI_ARBI = new Token(
   'pep',
   '',
 )
+
 export const CAKE_ETH = new Token(
   ChainId.ETHEREUM,
   '0x480C1DCcFF89b1b6E663c4b22B06e1d610e885a1',
@@ -168,6 +196,7 @@ export const CAKE_ETH = new Token(
   'pepecoin',
   'https://pepecoin.io/',
 )
+
 export const BUSD: Record<ChainId, Token> = {
   [ChainId.ETHEREUM]: BUSD_ETH,
   [ChainId.RINKEBY]: BUSD_RINKEBY,
@@ -175,6 +204,7 @@ export const BUSD: Record<ChainId, Token> = {
   [ChainId.BSC]: BUSD_BSC,
   [ChainId.BSC_TESTNET]: BUSD_TESTNET,
   [ChainId.GOERLI_ARBI]: BUSD_GOERLI_ARBI,
+  [ChainId.BASED]: BUSD_BASED,
 }
 
 export const CAKE = {
@@ -191,10 +221,12 @@ export const USDC = {
   [ChainId.RINKEBY]: USDC_RINKEBY,
   [ChainId.GOERLI]: USDC_GOERLI,
   [ChainId.GOERLI_ARBI]: USDC_GOERLI_ARBI,
+  [ChainId.BASED]: USDC_BASED,
 }
 
 export const USDT = {
   [ChainId.BSC]: USDT_BSC,
   [ChainId.ETHEREUM]: USDT_ETH,
   [ChainId.GOERLI_ARBI]: USDT_GOERLI_ARBI,
+  [ChainId.BASED]: USDT_BASED,
 }

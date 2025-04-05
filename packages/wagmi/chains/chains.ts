@@ -160,4 +160,27 @@ export const ethmainnet: Chain = {
   },
 //  testnet: true,
 }
+
+export const based: Chain = {
+  id: 32323,
+  name: 'BASED',
+  network: 'based',
+  nativeCurrency: {
+    decimals: 18,
+    name: 'BASED',
+    symbol: 'BASED',
+  },
+  rpcUrls: {
+    public: 'https://mainnet.basedaibridge.com/rpc',
+    default: 'https://mainnet.basedaibridge.com/rpc',
+  },
+  blockExplorers: {
+    default: { name: 'BF1337', url: 'https://explorer.bf1337.org/' },
+  },
+  multicall: {
+    address: '0xF4F01805b658eCe0052b3F592FC387B4d93CE46b',
+    blockCreated: 963691, 
+  },
+}
+
 export { rinkeby, mainnet, goerli }

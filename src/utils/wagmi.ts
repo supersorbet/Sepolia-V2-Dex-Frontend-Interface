@@ -8,7 +8,7 @@ import { MetaMaskConnector } from 'wagmi/connectors/metaMask'
 import { WalletConnectConnector } from 'wagmi/connectors/walletConnect'
 import { jsonRpcProvider } from 'wagmi/providers/jsonRpc'
 import { SafeConnector } from '@gnosis.pm/safe-apps-wagmi'
-import { ethmainnet } from '../../packages/wagmi/chains/chains'
+import { ethmainnet, based } from '../../packages/wagmi/chains/chains'
 
 const CHAINS = [
   bsc,
@@ -19,6 +19,7 @@ const CHAINS = [
   goerli,
   arbitrumGoerli,
   ethmainnet,
+  based,
 ]
 
 const getNodeRealUrl = (networkName: string) => {
@@ -60,6 +61,9 @@ export const { provider, chains } = configureChains(CHAINS, [
     rpc: (chain) => {
       if (!!process.env.NEXT_PUBLIC_NODE_PRODUCTION && chain.id === bsc.id) {
         return { http: process.env.NEXT_PUBLIC_NODE_PRODUCTION }
+      }
+      if (chain.id === based.id) {
+        return { http: 'https://mainnet.basedaibridge.com/rpc' }
       }
       return getNodeRealUrl(chain.network) || { http: chain.rpcUrls.default }
     },

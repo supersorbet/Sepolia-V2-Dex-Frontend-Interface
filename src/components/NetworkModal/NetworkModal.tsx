@@ -17,7 +17,7 @@ export const NetworkModal = ({ pageSupportedChains = SUPPORT_ONLY_BSC }: { pageS
   const [dismissWrongNetwork, setDismissWrongNetwork] = useAtom(hideWrongNetworkModalAtom)
 
   const isBNBOnlyPage = useMemo(() => {
-    return pageSupportedChains?.length === 1 && pageSupportedChains[0] === ChainId.GOERLI_ARBI
+    return pageSupportedChains?.length === 1 && pageSupportedChains[0] === ChainId.BASED
   }, [pageSupportedChains])
 
   const isPageNotSupported = useMemo(

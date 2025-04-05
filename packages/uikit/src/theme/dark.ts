@@ -10,12 +10,18 @@ import { dark as darkTooltip } from "../components/Tooltip/theme";
 import base from "./base";
 import { darkColors } from "./colors";
 
+// Extend darkCard with boxShadow
+const extendedDarkCard = {
+  ...darkCard,
+  boxShadow: '0px 0px 10px rgba(0, 238, 255, 0.15)',
+};
+
 const darkTheme: DefaultTheme = {
   ...base,
   isDark: true,
   alert: darkAlert,
   colors: darkColors,
-  card: darkCard,
+  card: extendedDarkCard,
   toggle: darkToggle,
   nav: darkNav,
   modal: darkModal,

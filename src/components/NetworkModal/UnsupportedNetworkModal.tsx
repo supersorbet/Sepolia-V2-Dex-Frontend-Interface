@@ -16,7 +16,7 @@ import Dots from '../Loader/Dots'
 export function UnsupportedNetworkModal() {
   const { switchNetworkAsync, isLoading, canSwitch } = useSwitchNetwork()
   const { chains } = useNetwork()
-  const chainId = useLocalNetworkChain() || ChainId.GOERLI_ARBI
+  const chainId = useLocalNetworkChain() || ChainId.BASED
   const { isConnected } = useAccount()
   const { logout } = useAuth()
   const { t } = useTranslation()
@@ -56,9 +56,9 @@ export function UnsupportedNetworkModal() {
             isLoading={isLoading}
             onClick={() => {
               if (supportedMainnetChains.map((c) => c.id).includes(chainId)) {
-                switchNetworkAsync(8453)
+                switchNetworkAsync(ChainId.BASED)
               } else {
-                switchNetworkAsync(8453)
+                switchNetworkAsync(ChainId.BASED)
               }
             }}
           >

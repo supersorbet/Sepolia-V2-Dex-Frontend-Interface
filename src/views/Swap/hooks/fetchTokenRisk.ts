@@ -71,3 +71,17 @@ export const fetchRiskToken = async (address: string, chainId: number): Promise<
     }
   }
 }
+
+export const fetchRiskData = async ({ chainId, address }: { chainId: number; address: string }): Promise<RiskTokenInfo | null> => {
+  // Use this switch once the BE supports token risk checks on other chains
+  switch (chainId) {
+    // case ChainId.ETHEREUM:
+    // case ChainId.BSC:
+    // case ChainId.BSC_TESTNET:
+    case ChainId.BASED:
+    case ChainId.GOERLI_ARBI:
+      return fetchRiskToken(address, ChainId.GOERLI_ARBI)
+    default:
+      return null
+  }
+}

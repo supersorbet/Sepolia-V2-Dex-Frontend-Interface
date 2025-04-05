@@ -11,6 +11,7 @@ export enum ChainId {
   BSC = 56,
   BSC_TESTNET = 97,
   GOERLI_ARBI = 11155111,
+  BASED = 32323,
 }
 
 export enum TradeType {
@@ -29,6 +30,7 @@ export const FACTORY_ADDRESS = '0xcA143Ce32Fe78f1f7019d7d551a6402fC5350c73'
 // // TODO: ETH This is test version, do not depends on it
 const FACTORY_ADDRESS_ETH = '0x460b2005b3318982feADA99f7ebF13e1D6f6eFfE'
 export const FACTORY_ADDRESS_GOERLI_ARBI = '0x765CAc856515735B859e3FaafA6aEf13b20c05d2'
+export const FACTORY_ADDRESS_BASED = '0x3d60C49F357090b0e3C8eB6276a9A1edE50e48b2' // Placeholder, replace with actual factory address
 
 export const FACTORY_ADDRESS_MAP: Record<number, string> = {
   [ChainId.ETHEREUM]: FACTORY_ADDRESS_ETH,
@@ -37,6 +39,7 @@ export const FACTORY_ADDRESS_MAP: Record<number, string> = {
   [ChainId.BSC]: FACTORY_ADDRESS,
   [ChainId.BSC_TESTNET]: '0x6725f303b657a9451d8ba641348b6761a6cc7a17',
   [ChainId.GOERLI_ARBI]: FACTORY_ADDRESS_GOERLI_ARBI,
+  [ChainId.BASED]: FACTORY_ADDRESS_BASED,
 }
 export const INIT_CODE_HASH = '0x00fb7f630766e6a796048ea87d01acd3068e8ff67d078148a3fa3f4a84f69bd5'
 
@@ -48,6 +51,7 @@ export const INIT_CODE_HASH_MAP: Record<number, string> = {
   [ChainId.BSC]: INIT_CODE_HASH,
   [ChainId.BSC_TESTNET]: '0xd0d4c4cd0848c93cb4fd1f498d7013ee6bfb25783ea21593d5834f5d250ece66',
   [ChainId.GOERLI_ARBI]: '0x6b53bdef3fffc6ffe4b71e62cf09d840ebd00c05b640cb965752ecd3515d027e',
+  [ChainId.BASED]: '0x0f66a8f59d4dba437bc7fd2cfe10ddb4cbf8a5c4ca3995b9daa36fed31159c01', // Placeholder, replace with actual init code hash
 }
 
 export const MINIMUM_LIQUIDITY = JSBI.BigInt(1000)
@@ -108,6 +112,14 @@ export const WETH9 = {
     'Sepolia Wrapped Ether',
     'https://weth.io'
   ),
+  [ChainId.BASED]: new Token(
+    ChainId.BASED,
+    '0x7C57053Fd42FbA79E6fd43fB7499A0Ac4d342C78', // Updated to WBASED address
+    18,
+    'WBASED',
+    'Wrapped BASED',
+    'https://based.org/'
+  ),
 }
 
 export const WBNB = {
@@ -144,6 +156,7 @@ export const WNATIVE: Record<number, Token> = {
   [ChainId.BSC]: WBNB[ChainId.BSC],
   [ChainId.BSC_TESTNET]: WBNB[ChainId.BSC_TESTNET],
   [ChainId.GOERLI_ARBI]: WETH9[ChainId.GOERLI_ARBI],
+  [ChainId.BASED]: WETH9[ChainId.BASED],
 }
 
 export const NATIVE: Record<
@@ -168,4 +181,5 @@ export const NATIVE: Record<
     decimals: 18,
   },
   [ChainId.GOERLI_ARBI]: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+  [ChainId.BASED]: { name: 'BASED', symbol: 'BASED', decimals: 18 },
 }

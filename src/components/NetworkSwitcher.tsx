@@ -52,7 +52,7 @@ const WrongNetworkSelect = ({ switchNetwork, chainId }) => {
   const { t } = useTranslation()
   const { targetRef, tooltip, tooltipVisible } = useTooltip(
     t(
-      'The URL you are accessing (Chain id: %chainId%) belongs to %network%; mismatching your wallet’s network. Please switch the network to continue.',
+      "The URL you are accessing (Chain id: %chainId%) belongs to %network%; mismatching your wallet's network. Please switch the network to continue.",
       {
         chainId,
         network: chains.find((c) => c.id === chainId)?.name ?? 'Unknown network',
@@ -129,7 +129,9 @@ export const NetworkSwitcher = () => {
         avatarSrc={
           chainId === 8453
             ? 'https://bridge.base.org/icons/base.svg'
-            : `/images/chains/${chainId}.png`
+            : chainId === ChainId.BASED
+              ? `/images/chains/${chainId}.png`
+              : `/images/chains/${chainId}.png`
         }
         disabled={cannotChangeNetwork}
         text={

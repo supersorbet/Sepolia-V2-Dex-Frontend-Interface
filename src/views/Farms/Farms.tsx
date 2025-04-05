@@ -338,7 +338,7 @@ const Farms: React.FC<React.PropsWithChildren> = ({ children }) => {
               </Button>
             </NextLinkFromReactRouter>
           </Box>
-          {(chainId === ChainId.BSC || chainId === ChainId.ETHEREUM || chainId === ChainId.GOERLI_ARBI) && (
+          {(chainId === ChainId.BSC || chainId === ChainId.ETHEREUM || chainId === ChainId.GOERLI_ARBI || chainId === ChainId.BASED) && (
             <Box>
               <BCakeBoosterCard />
             </Box>

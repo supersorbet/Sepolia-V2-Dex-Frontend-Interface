@@ -2,6 +2,7 @@ import Image from 'next/future/image'
 import { HelpIcon } from '@pancakeswap/uikit'
 import { isChainSupported } from 'utils/wagmi'
 import { memo } from 'react'
+import { ChainId } from '@pancakeswap/sdk'
 
 export const ChainLogo = memo(({ chainId }: { chainId: number }) => {
   if (isChainSupported(chainId)) {
@@ -10,7 +11,9 @@ export const ChainLogo = memo(({ chainId }: { chainId: number }) => {
         src={
           chainId === 8453
             ? 'https://bridge.base.org/icons/base.svg'
-            : `/images/chains/${chainId}.png`
+            : chainId === ChainId.BASED
+              ? `/images/chains/${chainId}.png`
+              : `/images/chains/${chainId}.png`
         }
         width={24}
         height={24}

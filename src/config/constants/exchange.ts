@@ -1,6 +1,6 @@
 import { ChainId, JSBI, Percent, Token, WNATIVE, WBNB, WETH9 } from '@pancakeswap/sdk'
 import { BigNumber } from '@ethersproject/bignumber'
-import { bscTokens, bscTestnetTokens, USDC, USDT, BUSD, CAKE } from '@pancakeswap/tokens'
+import { bscTokens, bscTestnetTokens, USDC, USDT, BUSD, CAKE, basedTokens } from '@pancakeswap/tokens'
 import { ChainMap, ChainTokenList } from './types'
 
 export const ROUTER_ADDRESS: ChainMap<string> = {
@@ -10,6 +10,7 @@ export const ROUTER_ADDRESS: ChainMap<string> = {
   [ChainId.BSC]: '0x10ED43C718714eb63d5aA57B78B54704E256024E',
   [ChainId.BSC_TESTNET]: '0xD99D1c33F9fC3444f8101754aBC46c52416550D1',
   [ChainId.GOERLI_ARBI]: '0x766363E226639654Fb2aAa79C109E8Bbe07EacA4',
+  [ChainId.BASED]: '0x7a3954011960b5ECC85B52e6e4b4ec89cC31809C',
 }
 
 // used to construct intermediary pairs for trading
@@ -40,6 +41,13 @@ export const BASES_TO_CHECK_TRADES_AGAINST: ChainTokenList = {
     CAKE[ChainId.GOERLI_ARBI],
     WETH9[ChainId.GOERLI_ARBI],
   ],
+  [ChainId.BASED]: [
+    WNATIVE[ChainId.BASED],
+    basedTokens.wbased,
+    basedTokens.usdc,
+    basedTokens.usdt,
+    basedTokens.busd,
+  ],
 }
 
 /**
@@ -51,6 +59,7 @@ export const ADDITIONAL_BASES: { [chainId in ChainId]?: { [tokenAddress: string]
     // SNFTS-SFUND
     [bscTokens.snfts.address]: [bscTokens.sfund],
   },
+  [ChainId.BASED]: {},
 }
 
 /**
@@ -60,6 +69,7 @@ export const ADDITIONAL_BASES: { [chainId in ChainId]?: { [tokenAddress: string]
  */
 export const CUSTOM_BASES: { [chainId in ChainId]?: { [tokenAddress: string]: Token[] } } = {
   [ChainId.BSC]: {},
+  [ChainId.BASED]: {},
 }
 
 // used for display in the default list when adding liquidity
@@ -70,6 +80,7 @@ export const SUGGESTED_BASES: ChainTokenList = {
   [ChainId.BSC]: [bscTokens.busd, bscTokens.cake, bscTokens.btcb],
   [ChainId.BSC_TESTNET]: [bscTestnetTokens.wbnb, bscTestnetTokens.cake, bscTestnetTokens.busd],
   [ChainId.GOERLI_ARBI]: [BUSD[ChainId.GOERLI_ARBI], USDT[ChainId.GOERLI_ARBI], USDC[ChainId.GOERLI_ARBI]],
+  [ChainId.BASED]: [basedTokens.wbased, basedTokens.usdc, basedTokens.usdt, basedTokens.busd],
 }
 
 // used to construct the list of all pairs we consider by default in the frontend
@@ -86,6 +97,7 @@ export const BASES_TO_TRACK_LIQUIDITY_FOR: ChainTokenList = {
   [ChainId.BSC]: [bscTokens.wbnb, bscTokens.dai, bscTokens.busd, bscTokens.usdt, bscTokens.cake],
   [ChainId.BSC_TESTNET]: [bscTestnetTokens.wbnb, bscTestnetTokens.cake, bscTestnetTokens.busd],
   [ChainId.GOERLI_ARBI]: [USDC[ChainId.GOERLI_ARBI], WNATIVE[ChainId.GOERLI_ARBI], BUSD[ChainId.GOERLI_ARBI]],
+  [ChainId.BASED]: [WNATIVE[ChainId.BASED], basedTokens.wbased, basedTokens.usdc, basedTokens.usdt],
 }
 
 export const PINNED_PAIRS: { readonly [chainId in ChainId]?: [Token, Token][] } = {
@@ -100,6 +112,11 @@ export const PINNED_PAIRS: { readonly [chainId in ChainId]?: [Token, Token][] } 
     [bscTokens.cake, bscTokens.wbnb],
     [bscTokens.busd, bscTokens.usdt],
     [bscTokens.dai, bscTokens.usdt],
+  ],
+  [ChainId.BASED]: [
+    [basedTokens.wbased, basedTokens.usdc],
+    [basedTokens.usdc, basedTokens.usdt],
+    [basedTokens.usdt, basedTokens.busd],
   ],
 }
 

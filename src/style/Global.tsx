@@ -8,10 +8,16 @@ declare module 'styled-components' {
 
 const GlobalStyle = createGlobalStyle`
   * {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Source Code Pro', monospace;
   }
   body {
     background-color: ${({ theme }) => theme.colors.background};
+    background-image: ${({ theme }) => 
+      theme.isDark 
+        ? 'linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(10, 10, 15, 1) 100%)'
+        : theme.colors.gradientBubblegum};
+    background-attachment: fixed;
+    background-size: 100% 100%;
 
     img {
       height: auto;

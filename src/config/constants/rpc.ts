@@ -15,3 +15,9 @@ export const GOERLI_ARBI_RPC_URLS = [
   'https://base-mainnet.public.blastapi.io',
   'https://base-mainnet.public.blastapi.io',
 ]
+
+export const BASED_RPC_URLS = [
+  'https://mainnet.basedaibridge.com/rpc',
+  'https://mainnet.basedaibridge.com/rpc',
+  'https://mainnet.basedaibridge.com/rpc',
+]

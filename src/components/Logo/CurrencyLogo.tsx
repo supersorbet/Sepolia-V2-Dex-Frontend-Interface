@@ -50,7 +50,9 @@ export default function CurrencyLogo({
         srcs={[
           currency.chainId === 8453
             ? 'https://bridge.base.org/icons/base.svg'
-            : `/images/chains/${currency.chainId}.png`,
+            : currency.chainId === ChainId.BASED
+              ? `/images/chains/${currency.chainId}.png` 
+              : `/images/chains/${currency.chainId}.png`,
         ]}
         width={size}
         style={style}
