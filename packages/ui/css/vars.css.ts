@@ -9,18 +9,24 @@ const baseTokens: Omit<Theme, 'colors'> = tokens
 const baseVars = createGlobalThemeContract(baseTokens, getVarName)
 createGlobalTheme(':root', baseVars, baseTokens)
 
-const makeColorScheme = (mode: Mode = 'light') => {
-  const colors = tokens.colors[mode]
-
-  return {
-    colors,
-  }
+const lightColorScheme = {
+  colors: tokens.colors.light,
 }
 
-const modeTokens = makeColorScheme('light')
-const modeVars = createGlobalThemeContract(modeTokens, getVarName)
-createGlobalTheme('[data-theme="light"]', modeVars, modeTokens)
-createGlobalTheme('[data-theme="dark"]', modeVars, makeColorScheme('dark'))
+const darkColorScheme = {
+  colors: tokens.colors.dark,
+}
+
+const colorTokens = deepmerge(lightColorScheme, darkColorScheme)
+const modeVars = createGlobalThemeContract(colorTokens, getVarName)
+
+createGlobalTheme('[data-theme="light"]', modeVars, {
+  colors: tokens.colors.light,
+})
+
+createGlobalTheme('[data-theme="dark"]', modeVars, {
+  colors: tokens.colors.dark,
+})
 
 type BaseVars = typeof baseVars
 type ModeVars = typeof modeVars

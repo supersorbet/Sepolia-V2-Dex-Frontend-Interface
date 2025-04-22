@@ -12,19 +12,20 @@ const withVanillaExtract = createVanillaExtractPlugin()
 const sentryWebpackPluginOptions =
   process.env.VERCEL_ENV === 'production'
     ? {
-        // Additional config options for the Sentry Webpack plugin. Keep in mind that
+        // Additional config options for the Sentry webpack plugin. Keep in mind that
         // the following options are set automatically, and overriding them is not
         // recommended:
-        //   release, url, org, project, authToken, configFile, stripPrefix,
-        //   urlPrefix, include, ignore
+        //   release, url, configFile, stripPrefix, urlPrefix, include, ignore
         silent: false, // Logging when deploying to check if there is any problem
         validate: true,
-        // For all available options, see:
-        // https://github.com/getsentry/sentry-webpack-plugin#options.
+        hideSourceMaps: false,
+        autoInstrumentServerFunctions: true,
+        autoInstrumentMiddleware: true,
       }
     : {
-        silent: true, // Suppresses all logs
-        dryRun: !process.env.SENTRY_AUTH_TOKEN,
+        hideSourceMaps: false,
+        autoInstrumentServerFunctions: true,
+        autoInstrumentMiddleware: true,
       }
 
 /** @type {import('next').NextConfig} */
@@ -152,9 +153,19 @@ const config = {
         destination: '/nfts',
         permanent: true,
       },
+      {
+        source: '/info/pools',
+        destination: '/info/pairs',
+        permanent: true,
+      },
+      {
+        source: '/info/pools/:address',
+        destination: '/info/pairs/:address',
+        permanent: true,
+      },
     ]
   },
-  webpack: (webpackConfig, { webpack }) => {
+  webpack: (webpackConfig, { webpack, isServer }) => {
     // tree shake sentry tracing
     webpackConfig.plugins.push(
       new webpack.DefinePlugin({
@@ -162,6 +173,10 @@ const config = {
         __SENTRY_TRACING__: false,
       }),
     )
+    
+    if (isServer) {
+      webpackConfig.externals = [...webpackConfig.externals, 'bufferutil', 'utf-8-validate']
+    }
     return webpackConfig
   },
 }

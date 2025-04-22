@@ -2,8 +2,8 @@ import styled from 'styled-components'
 import { Card } from '@pancakeswap/uikit'
 
 export const BodyWrapper = styled(Card)`
-  border-radius: 24px;
-  max-width: 436px;
+  border-radius: 16px;
+  max-width: 500px;
   width: 100%;
   z-index: 1;
 `

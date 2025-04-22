@@ -8,13 +8,21 @@ import { ThemeProvider as NextThemeProvider, useTheme as useNextTheme } from 'ne
 import { WagmiProvider } from '@pancakeswap/wagmi'
 import { client } from 'utils/wagmi'
 import { HistoryManagerProvider } from 'contexts/HistoryContext'
+import { ThemeProvider } from 'styled-components'
+
+// Default theme - used during SSR and when resolvedTheme is undefined
+const defaultTheme = dark;
 
 const StyledUIKitProvider: React.FC<React.PropsWithChildren> = ({ children, ...props }) => {
   const { resolvedTheme } = useNextTheme()
+  const theme = resolvedTheme === 'light' ? light : dark;
+  
   return (
-    <UIKitProvider theme={resolvedTheme === 'dark' ? dark : light} {...props}>
-      {children}
-    </UIKitProvider>
+    <ThemeProvider theme={theme || defaultTheme}>
+      <UIKitProvider theme={theme || defaultTheme} {...props}>
+        {children}
+      </UIKitProvider>
+    </ThemeProvider>
   )
 }
 
@@ -25,21 +33,23 @@ const Providers: React.FC<React.PropsWithChildren<{ store: Store; children: Reac
   return (
     <WagmiProvider client={client}>
       <Provider store={store}>
-        <NextThemeProvider>
-          <StyledUIKitProvider>
-            <LanguageProvider>
-              <SWRConfig
-                value={{
-                  use: [fetchStatusMiddleware],
-                }}
-              >
-                <HistoryManagerProvider>
-                  <ModalProvider>{children}</ModalProvider>
-                </HistoryManagerProvider>
-              </SWRConfig>
-            </LanguageProvider>
-          </StyledUIKitProvider>
-        </NextThemeProvider>
+        <ThemeProvider theme={defaultTheme}>
+          <NextThemeProvider defaultTheme="dark">
+            <StyledUIKitProvider>
+              <LanguageProvider>
+                <SWRConfig
+                  value={{
+                    use: [fetchStatusMiddleware],
+                  }}
+                >
+                  <HistoryManagerProvider>
+                    <ModalProvider>{children}</ModalProvider>
+                  </HistoryManagerProvider>
+                </SWRConfig>
+              </LanguageProvider>
+            </StyledUIKitProvider>
+          </NextThemeProvider>
+        </ThemeProvider>
       </Provider>
     </WagmiProvider>
   )

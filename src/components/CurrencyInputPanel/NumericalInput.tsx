@@ -12,13 +12,15 @@ const StyledInput = styled.input<{ error?: boolean; fontSize?: string; align?: s
   border: none;
   flex: 1 1 auto;
   background-color: transparent;
-  font-size: 16px;
+  font-size: ${({ fontSize }) => fontSize || '20px'};
+  font-family: 'Source Code Pro', monospace;
   text-align: ${({ align }) => align ?? 'right'};
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
   padding: 0px;
   -webkit-appearance: textfield;
+  max-width: 100%;
 
   ::-webkit-search-decoration {
     -webkit-appearance: none;

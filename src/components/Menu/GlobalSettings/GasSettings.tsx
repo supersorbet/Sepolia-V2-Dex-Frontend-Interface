@@ -13,7 +13,7 @@ const GasSettings = () => {
 
   return (
     <Flex flexDirection="column">
-      {chainId === ChainId.BSC && (
+      {(chainId === ChainId.BSC || chainId === ChainId.BASED) && (
         <Flex mb="12px" alignItems="center">
           <Text>{t('Default Transaction Speed (GWEI)')}</Text>
           <QuestionHelper
@@ -59,6 +59,19 @@ const GasSettings = () => {
         >
           {t('Instant (%gasPrice%)', { gasPrice: GAS_PRICE.instant })}
         </Button>
+        {chainId === ChainId.BASED && (
+          <Button
+            mr="4px"
+            mt="4px"
+            scale="sm"
+            onClick={() => {
+              setGasPrice(GAS_PRICE_GWEI.based)
+            }}
+            variant={gasPrice === GAS_PRICE_GWEI.based ? 'primary' : 'tertiary'}
+          >
+            {t('BASED (%gasPrice%)', { gasPrice: GAS_PRICE.based })}
+          </Button>
+        )}
       </Flex>
     </Flex>
   )

@@ -2,6 +2,8 @@ import { Contract, PayableOverrides } from '@ethersproject/contracts'
 import { TransactionResponse } from '@ethersproject/providers'
 import { calculateGasMargin } from 'utils'
 import { ContractMethodName, MaybeContract, ContractMethodParams } from 'utils/types'
+import { ChainId } from '@pancakeswap/sdk'
+import { BASED_GAS_LIMIT } from 'config'
 
 /**
  * Estimate the gas needed to call a function, and add a 10% margin
@@ -24,6 +26,12 @@ export const estimateGas = async <C extends Contract = Contract, N extends Contr
   const rawGasEstimation = await contract.estimateGas[methodName](...methodArgs, overrides)
   // By convention, BigNumber values are multiplied by 1000 to avoid dealing with real numbers
   const gasEstimation = calculateGasMargin(rawGasEstimation, gasMarginPer10000)
+  
+  // For BASED network, use a fixed gas limit
+  if (contract.provider?.network?.chainId === ChainId.BASED) {
+    return BASED_GAS_LIMIT
+  }
+  
   return gasEstimation
 }
 

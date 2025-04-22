@@ -407,7 +407,7 @@ export function useGasPrice(): string {
   const userGas = useSelector<AppState, AppState['user']['gasPrice']>((state) => state.user.gasPrice)
   const { data } = useFeeData({
     chainId,
-    enabled: chainId !== ChainId.ETHEREUM && chainId !== ChainId.GOERLI_ARBI,
+    enabled: chainId !== ChainId.ETHEREUM && chainId !== ChainId.GOERLI_ARBI && chainId !== ChainId.BASED,
     watch: true,
   })
   if (chainId === ChainId.ETHEREUM) {
@@ -415,6 +415,9 @@ export function useGasPrice(): string {
   }
   if (chainId === ChainId.GOERLI_ARBI) {
     return GAS_PRICE_GWEI.testnet
+  }
+  if (chainId === ChainId.BASED) {
+    return GAS_PRICE_GWEI.based
   }
   if (chain?.testnet) {
     return data?.formatted?.maxPriorityFeePerGas

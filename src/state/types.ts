@@ -21,6 +21,7 @@ export enum GAS_PRICE {
   fast = '6',
   instant = '7',
   testnet = '10',
+  based = '0.009', // BASED network specific gas price
 }
 
 export const GAS_PRICE_GWEI = {
@@ -28,6 +29,7 @@ export const GAS_PRICE_GWEI = {
   fast: parseUnits(GAS_PRICE.fast, 'gwei').toString(),
   instant: parseUnits(GAS_PRICE.instant, 'gwei').toString(),
   testnet: parseUnits(GAS_PRICE.testnet, 'gwei').toString(),
+  based: parseUnits(GAS_PRICE.based, 'gwei').toString(),
 }
 
 export type DeserializedPoolVault = DeserializedPool & DeserializedCakeVault
